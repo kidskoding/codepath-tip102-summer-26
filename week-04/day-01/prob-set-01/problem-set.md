@@ -4,8 +4,6 @@
 
 ## Problem 1: NFT Name Extractor
 
-**Difficulty:** Easy
-
 ### Description
 
 You're curating a large collection of NFTs for a digital art gallery, and your first task is to extract the names of these NFTs from a given list of dictionaries. Each dictionary in the list represents an NFT, and contains information such as the name, creator, and current value.
@@ -13,13 +11,6 @@ You're curating a large collection of NFTs for a digital art gallery, and your f
 Write the `extract_nft_names()` function, which takes in this list and returns a list of all NFT names.
 
 Evaluate the time and space complexity of your solution. Define your variables and provide a rationale for why you believe your solution has the stated time and space complexity.
-
-### Function Signature
-
-```python
-def extract_nft_names(nft_collection):
-    pass
-```
 
 ### Examples
 
@@ -48,8 +39,6 @@ Output: ['Golden Hour']
 
 ## Problem 2: NFT Collection Review
 
-**Difficulty:** Easy
-
 ### Description
 
 You're responsible for ensuring the quality of the NFT collection before it is displayed in the virtual gallery. One of your tasks is to review and debug the code that extracts the names of NFTs from the collection. A junior developer wrote the initial version of this function, but it contains some bugs that prevent it from working correctly.
@@ -67,13 +56,6 @@ def extract_nft_names(nft_collection):
     for nft in nft_collection:
         nft_names += nft["name"]
     return nft_names
-```
-
-### Function Signature
-
-```python
-def extract_nft_names(nft_collection):
-    pass
 ```
 
 ### Examples
@@ -101,8 +83,6 @@ Output: []
 
 ## Problem 3: Identify Popular Creators
 
-**Difficulty:** Medium
-
 ### Description
 
 You have been tasked with identifying the most popular NFT creators in your collection. A creator is considered "popular" if they have created more than one NFT in the collection.
@@ -110,13 +90,6 @@ You have been tasked with identifying the most popular NFT creators in your coll
 Write the `identify_popular_creators()` function, which takes a list of NFTs and returns a list of the names of popular creators.
 
 Evaluate the time and space complexity of your solution. Define your variables and provide a rationale for why you believe your solution has the stated time and space complexity.
-
-### Function Signature
-
-```python
-def identify_popular_creators(nft_collection):
-    pass
-```
 
 ### Examples
 
@@ -146,8 +119,6 @@ Output: []
 
 ## Problem 4: NFT Collection Statistics
 
-**Difficulty:** Easy
-
 ### Description
 
 You want to provide an overview of the NFT collection to potential buyers. One key statistic is the average value of the NFTs in the collection. However, if the collection is empty, the average value should be reported as 0.
@@ -155,13 +126,6 @@ You want to provide an overview of the NFT collection to potential buyers. One k
 Write the `average_nft_value()` function, which calculates and returns the average value of the NFTs in the collection.
 
 Evaluate the time and space complexity of your solution. Define your variables and provide a rationale for why you believe your solution has the stated time and space complexity.
-
-### Function Signature
-
-```python
-def average_nft_value(nft_collection):
-    pass
-```
 
 ### Examples
 
@@ -190,8 +154,6 @@ Output: 0
 
 ## Problem 5: NFT Tag Search
 
-**Difficulty:** Medium
-
 ### Description
 
 Some NFTs are grouped into collections, and each collection might contain multiple NFTs. Additionally, each NFT can have a list of tags describing its style or theme (e.g., "abstract", "landscape", "modern"). You need to search through these nested collections to find all NFTs that contain a specific tag.
@@ -199,13 +161,6 @@ Some NFTs are grouped into collections, and each collection might contain multip
 Write the `search_nft_by_tag()` function, which takes in a nested list of NFT collections and a tag to search for. The function should return a list of NFT names that have the specified tag.
 
 Evaluate the time and space complexity of your solution. Define your variables and provide a rationale for why you believe your solution has the stated time and space complexity.
-
-### Function Signature
-
-```python
-def search_nft_by_tag(nft_collections, tag):
-    pass
-```
 
 ### Examples
 
@@ -238,8 +193,6 @@ Output: []
 
 ## Problem 6: NFT Queue Processing
 
-**Difficulty:** Easy
-
 ### Description
 
 NFTs are processed in a queue that follows First-In, First-Out (FIFO). Given a list of NFT names in their initial queue order, return the order in which they are processed.
@@ -247,13 +200,6 @@ NFTs are processed in a queue that follows First-In, First-Out (FIFO). Given a l
 Write the `process_nft_queue()` function, which takes a list of NFTs. The function should return a list of NFT names in the order they were processed.
 
 Evaluate the time and space complexity of your solution. Define your variables and provide a rationale for why you believe your solution has the stated time and space complexity.
-
-### Function Signature
-
-```python
-def process_nft_queue(nft_queue):
-    pass
-```
 
 ### Examples
 
@@ -284,8 +230,6 @@ Output: ['Crypto Kitty', 'Galactic Voyage']
 
 ## Problem 7: Validate NFT Addition
 
-**Difficulty:** Medium
-
 ### Description
 
 You want to ensure that NFTs are added in a balanced way. For example, every "add" action must be properly closed by a corresponding "remove" action.
@@ -295,13 +239,6 @@ Write the `validate_nft_actions()` function, which takes a list of actions (eith
 A sequence of actions is considered balanced if every "add" has a corresponding "remove" and no "remove" occurs before an "add".
 
 Evaluate the time and space complexity of your solution. Define your variables and provide a rationale for why you believe your solution has the stated time and space complexity.
-
-### Function Signature
-
-```python
-def validate_nft_actions(actions):
-    pass
-```
 
 ### Examples
 
@@ -329,8 +266,6 @@ Output: False
 
 ## Problem 8: Find Closest NFT Values
 
-**Difficulty:** Medium
-
 ### Description
 
 Buyers often look for NFTs that are closest in value to their budget. Given a sorted list of NFT values and a budget, you need to find the two NFT values that are closest to the given budget: one that is just below or equal to the budget and one that is just above or equal to the budget. If an exact match exists, it should be included as one of the values.
@@ -338,13 +273,6 @@ Buyers often look for NFTs that are closest in value to their budget. Given a so
 Write the `find_closest_nft_values()` function, which takes a sorted list of NFT values and a budget, and returns the pair of the two closest NFT values.
 
 Evaluate the time and space complexity of your solution. Define your variables and provide a rationale for why you believe your solution has the stated time and space complexity.
-
-### Function Signature
-
-```python
-def find_closest_nft_values(nft_values, budget):
-    pass
-```
 
 ### Examples
 

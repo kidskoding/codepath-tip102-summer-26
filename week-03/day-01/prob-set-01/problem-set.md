@@ -4,8 +4,6 @@
 
 ## Problem 1: Post Format Validator
 
-**Difficulty:** Medium
-
 ### Description
 
 You are managing a social media platform and need to ensure that posts are properly formatted. Each post must have balanced and correctly nested tags: `()` for mentions, `[]` for hashtags, and `{}` for links. Given a string representing a post's content, determine if the tags in the post are correctly formatted.
@@ -13,13 +11,6 @@ You are managing a social media platform and need to ensure that posts are prope
 **A solution is considered valid if:**
 - Every opening tag has a corresponding closing tag of the same type.
 - Tags are closed in the correct order.
-
-### Function Signature
-
-```python
-def is_valid_post_format(posts):
-    pass
-```
 
 ### Examples
 
@@ -45,18 +36,9 @@ Output: False
 
 ## Problem 2: Reverse User Comments Queue
 
-**Difficulty:** Medium
-
 ### Description
 
 On your platform, comments on posts are displayed in the order they are received. For a special feature, you need to reverse the order of comments before displaying them. Given a queue of comments represented as a list of strings, reverse the order using a stack.
-
-### Function Signature
-
-```python
-def reverse_comments_queue(comments):
-    pass
-```
 
 ### Examples
 
@@ -76,18 +58,9 @@ Output: ['Well written.', 'Interesting read.', 'First!']
 
 ## Problem 3: Check Symmetry in Post Titles
 
-**Difficulty:** Medium  
-
 ### Description
 
 As part of a new feature on your social media platform, you want to highlight post titles that are symmetrical — meaning they read the same forwards and backwards when ignoring spaces, punctuation, and case. Given a post title as a string, use the two-pointer method to determine if the title is symmetrical.
-
-### Function Signature
-
-```python
-def is_symmetrical_title(title):
-    pass
-```
 
 ### Examples
 
@@ -107,8 +80,6 @@ Output: False
 
 ## Problem 4: Engagement Boost - SKIP
 
-**Difficulty:** Medium  
-
 ### Description
 
 You track your daily engagement rates as a list of integers sorted in non-decreasing order. To analyze the impact of certain strategies, you square each engagement rate and return the results sorted in non-decreasing order.
@@ -116,13 +87,6 @@ You track your daily engagement rates as a list of integers sorted in non-decrea
 **Your tasks:**
 1. Read through the starter code and add comments so your pod understands how it works.
 2. Modify the solution to use the two-pointer technique.
-
-### Function Signature
-
-```python
-def engagement_boost(engagements):
-    pass
-```
 
 ### Starter Code
 
@@ -164,20 +128,11 @@ Output: [4, 9, 9, 49, 121]
 
 ## Problem 5: Content Cleaner
 
-**Difficulty:** Medium
-
 ### Description
 
 You want to make sure your posts are clean and professional. Given a string `post` of lowercase and uppercase English letters, remove any pairs of adjacent characters where one is the lowercase version of a letter and the other is the uppercase version of the same letter. Keep removing such pairs until the post is clean.
 
 A clean post does not have two adjacent characters `post[i]` and `post[i + 1]` where one is the lowercase version of the other (or vice versa). Return the clean post. An empty string is also considered clean.
-
-### Function Signature
-
-```python
-def clean_post(post):
-    pass
-```
 
 ### Examples
 
@@ -203,18 +158,9 @@ Output: "s"
 
 ## Problem 6: Post Editor
 
-**Difficulty:** Easy  
-
 ### Description
 
 You want to add a creative twist to your posts by reversing the order of characters in each word while still preserving whitespace and the original word order. Given a string `post`, reverse the order of characters in each word within the sentence.
-
-### Function Signature
-
-```python
-def edit_post(post):
-    pass
-```
 
 ### Examples
 
@@ -234,18 +180,9 @@ Output: "kcehC tuo ym tseval golv"
 
 ## Problem 7: Post Compare
 
-**Difficulty:** Medium / Simulation
-
 ### Description
 
 You often draft your posts and edit them before publishing. Given two draft strings `draft1` and `draft2`, return `True` if they are equal when both are typed into empty text editors. The `#` character means a backspace. After backspacing an empty text, the text remains empty.
-
-### Function Signature
-
-```python
-def post_compare(draft1, draft2):
-    pass
-```
 
 ### Examples
 

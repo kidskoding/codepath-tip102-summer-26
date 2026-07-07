@@ -4,8 +4,6 @@
 
 ## Problem 1: Planning Your Daily Work Schedule
 
-**Difficulty:** Easy
-
 ### Description
 
 Your day consists of various tasks, each requiring a certain amount of time. To optimize your workday, you want to find a pair of tasks that fits exactly into a specific time slot you have available.
@@ -13,13 +11,6 @@ Your day consists of various tasks, each requiring a certain amount of time. To 
 Given a list of integers representing the time required for each task and an integer representing the available time slot, write a function that returns `True` if there exists a pair of tasks whose combined time exactly matches the available time slot, and `False` otherwise.
 
 Evaluate the time and space complexity of your solution. Define your variables and provide a rationale for why you believe your solution has the stated time and space complexity.
-
-### Function Signature
-
-```python
-def find_task_pair(task_times, available_time):
-    pass
-```
 
 ### Examples
 
@@ -45,8 +36,6 @@ Output: False
 
 ## Problem 2: Minimizing Workload Gaps
 
-**Difficulty:** Medium
-
 ### Description
 
 You work with clients across different time zones and often have gaps between your work sessions. You want to minimize these gaps to make your workday more efficient. You have a list of work sessions, each with a start time and an end time.
@@ -54,13 +43,6 @@ You work with clients across different time zones and often have gaps between yo
 Given a list of tuples where each tuple represents a work session with a start and end time (both in 24-hour format as integers, e.g., `1300` for 1:00 PM), write a function to find the smallest gap between any two consecutive work sessions. The gap is measured in minutes.
 
 Evaluate the time and space complexity of your solution. Define your variables and provide a rationale for why you believe your solution has the stated time and space complexity.
-
-### Function Signature
-
-```python
-def find_smallest_gap(work_sessions):
-    pass
-```
 
 ### Examples
 
@@ -86,8 +68,6 @@ Output: 15
 
 ## Problem 3: Expense Tracking and Categorization
 
-**Difficulty:** Medium
-
 ### Description
 
 You travel frequently and need to keep track of your expenses. You categorize your expenses into different categories such as "Food," "Transport," "Accommodation," etc. At the end of each month, you want to calculate the total expenses for each category to better understand where your money is going.
@@ -95,13 +75,6 @@ You travel frequently and need to keep track of your expenses. You categorize yo
 Given a list of tuples where each tuple contains an expense category (string) and an expense amount (float), write a function that returns the expense categories with the total expenses for each category. Additionally, the function should return the category with the highest total expense.
 
 Evaluate the time and space complexity of your solution. Define your variables and provide a rationale for why you believe your solution has the stated time and space complexity.
-
-### Function Signature
-
-```python
-def calculate_expenses(expenses):
-    pass
-```
 
 ### Examples
 
@@ -130,8 +103,6 @@ Output: ({'Utilities': 150.0, 'Food': 75.0, 'Transport': 75.0}, 'Utilities')
 
 ## Problem 4: Analyzing Word Frequency
 
-**Difficulty:** Medium
-
 ### Description
 
 As a digital nomad who writes blogs, articles, and reports regularly, it's important to analyze the text you produce to ensure clarity and avoid overusing certain words. You want to create a tool that analyzes the frequency of each word in a given text and identifies the most frequent word(s).
@@ -144,13 +115,6 @@ Given a string of text, write a function that returns the unique words and the n
 - In case of a tie, return all words that have the highest frequency.
 
 Evaluate the time and space complexity of your solution. Define your variables and provide a rationale for why you believe your solution has the stated time and space complexity.
-
-### Function Signature
-
-```python
-def word_frequency_analysis(text):
-    pass
-```
 
 ### Examples
 
@@ -176,8 +140,6 @@ Output: ({'stay': 3, 'connected': 1, 'productive': 1, 'happy': 1}, ['stay'])
 
 ## Problem 5: Validating HTML Tags
 
-**Difficulty:** Medium
-
 ### Description
 
 As a digital nomad who frequently writes and edits HTML for your blog, you want to ensure that your HTML code is properly structured. One important aspect of HTML structure is ensuring that all opening tags have corresponding closing tags and that they are properly nested.
@@ -189,13 +151,6 @@ Given a string of HTML-like tags (simplified for this problem), write a function
 - Tags can be nested but cannot overlap improperly (e.g., `<div><p></div></p>` is invalid).
 
 Evaluate the time and space complexity of your solution. Define your variables and provide a rationale for why you believe your solution has the stated time and space complexity.
-
-### Function Signature
-
-```python
-def validate_html_tags(html):
-    pass
-```
 
 ### Examples
 
@@ -227,8 +182,6 @@ Output: False
 
 ## Problem 6: Task Prioritization with Limited Time
 
-**Difficulty:** Medium
-
 ### Description
 
 You often have a long list of tasks to complete, but limited time to do so. Each task has a specific duration, and you only have a certain amount of time available in your schedule. You need to prioritize and complete as many tasks as possible within the given time limit.
@@ -236,13 +189,6 @@ You often have a long list of tasks to complete, but limited time to do so. Each
 Given a list of task durations and a time limit, determine the maximum number of tasks you can complete within that time.
 
 Evaluate the time and space complexity of your solution. Define your variables and provide a rationale for why you believe your solution has the stated time and space complexity.
-
-### Function Signature
-
-```python
-def max_tasks_within_time(tasks, time_limit):
-    pass
-```
 
 ### Examples
 
@@ -268,8 +214,6 @@ Output: 3
 
 ## Problem 7: Frequent Co-working Spaces
 
-**Difficulty:** Easy
-
 ### Description
 
 You often work from various co-working spaces. You want to analyze your usage patterns to identify which co-working spaces you visit the most frequently.
@@ -277,13 +221,6 @@ You often work from various co-working spaces. You want to analyze your usage pa
 Given a list of co-working spaces you visited over the past month, write a function to determine which co-working space(s) you visited most frequently. If there is a tie, return all of the most visited spaces.
 
 Evaluate the time and space complexity of your solution. Define your variables and provide a rationale for why you believe your solution has the stated time and space complexity.
-
-### Function Signature
-
-```python
-def most_frequent_spaces(visits):
-    pass
-```
 
 ### Examples
 
@@ -309,8 +246,6 @@ Output: ['Hub', 'Regus']
 
 ## Problem 8: Track Popular Destinations
 
-**Difficulty:** Medium
-
 ### Description
 
 You want to track the most popular destinations you visited based on the number of times you have visited them.
@@ -318,13 +253,6 @@ You want to track the most popular destinations you visited based on the number 
 Given a list of visited destinations with timestamps, determine the destination that has been visited the most and the total number of times it was visited. If there is a tie, return the one with the latest visit.
 
 Evaluate the time and space complexity of your solution. Define your variables and provide a rationale for why you believe your solution has the stated time and space complexity.
-
-### Function Signature
-
-```python
-def most_popular_destination(visits):
-    pass
-```
 
 ### Examples
 

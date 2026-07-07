@@ -37,3 +37,5 @@ Each `prob-set-XX/` has a `problem-set.md` with the full problem descriptions. N
 - Always use `uv run` — not `python` directly
 - Zero-padded directory names only (`week-01` not `week-1`)
 - One function per `probXX.py` file matching the problem signature exactly
+- Skip `probXX.py` for debugging/review problems (no implementation file needed); delete if one already exists
+- When a week has two problem set versions, use separate `prob-set-01/` (v1) and `prob-set-02/` (v2) directories, each with its own `problem-set.md`
