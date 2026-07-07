@@ -23,7 +23,6 @@ def factorial(n):
         # "unwinds" back up, multiplying on the way out.
 print(factorial(5))
 
-
 # --- fibonacci: each number is the sum of the previous two ------------------
 def fibonacci(n):
     if n == 0:            # BASE CASE 1
