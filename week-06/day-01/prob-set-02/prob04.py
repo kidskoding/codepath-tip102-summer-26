@@ -1,4 +1,7 @@
-def prob04(events):
+from references import Node
+
+
+def prob04(events: Node | None):
     if not events:
         return None
 

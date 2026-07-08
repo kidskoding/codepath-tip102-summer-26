@@ -1,4 +1,10 @@
-def prob04(playlist_head):
+from references import Node
+
+
+def prob04(playlist_head: Node) -> bool:
+    if not playlist_head:
+        return False 
+
     slow = playlist_head
     fast = playlist_head
 

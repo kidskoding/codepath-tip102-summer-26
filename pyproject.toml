@@ -8,6 +8,10 @@ dependencies = [
     "pytest>=9.0.3",
 ]
 
+[tool.pytest.ini_options]
+# repo root on sys.path so any set can `from references import Node/Villager/Player`
+pythonpath = ["."]
+
 [tool.basedpyright]
 typeCheckingMode = "basic"
 executionEnvironments = [
@@ -16,7 +20,7 @@ executionEnvironments = [
     { root = "week-03", extraPaths = ["week-03/day-01/prob-set-01", "week-03/day-01/prob-set-02"] },
     { root = "week-04", extraPaths = ["week-04/day-01/prob-set-01", "week-04/day-01/prob-set-02"] },
     { root = "week-05", extraPaths = ["week-05/day-01/prob-set-01", "week-05/day-01/prob-set-02", "week-05/day-01/session-notes"] },
-    { root = "week-06", extraPaths = ["week-06/day-01/prob-set-01", "week-06/day-01/prob-set-02"] },
+    { root = "week-06", extraPaths = [".", "week-06/day-01/prob-set-01", "week-06/day-01/prob-set-02", "week-06/day-02/prob-set-01"] },
     { root = "week-07", extraPaths = ["week-07/day-01/prob-set-01", "week-07/day-01/prob-set-02"] },
     { root = "week-08", extraPaths = ["week-08/day-01/prob-set-01", "week-08/day-01/prob-set-02"] },
     { root = "week-09", extraPaths = ["week-09/day-01/prob-set-01", "week-09/day-01/prob-set-02"] },
