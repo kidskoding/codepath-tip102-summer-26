@@ -39,19 +39,26 @@ EVALUATE:
 
 
 ## IMPLEMENT
+# PATTERN: build a string by ACCUMULATING in a loop (the "accumulator" pattern).
+# Start empty, add a piece each iteration, return the result at the end.
 def nanana_batman(x):
-    result = ""
+    result = ""              # accumulator: starts empty, grows each loop.
 
-    if x < 0:
-        return("error!")
+    if x < 0:                # GUARD CLAUSE: handle the bad input first and bail,
+        return("error!")     # so the main logic below can assume x >= 0.
 
+    # range(x) yields x times; `_` means "we don't use the loop variable, only
+    # the repetition." Each pass concatenates "na" onto result.
     for _ in range(x):
-        result += "na"
-    if result:
-        return(result+ " batman!")
+        result += "na"       # x=3 -> "" -> "na" -> "nana" -> "nanana"
+
+    if result:               # a non-empty string is "truthy"; "" is "falsy".
+        return(result+ " batman!")   # x >= 1 case
     else:
-        return("batman!")
+        return("batman!")    # x == 0 case: loop ran zero times, result is still ""
+    # NOTE: this builds the whole thing with the loop, avoiding the "na" * x
+    # shortcut the prompt forbids. The final if/else handles the x=0 edge case.
 
 
 ## TESTS
-print(nanana_batman(-10))
+print(nanana_batman(-10))   # try also nanana_batman(0) and nanana_batman(3) to see each branch
