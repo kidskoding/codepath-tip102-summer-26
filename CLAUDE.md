@@ -5,24 +5,35 @@ CodePath TIP-102 Summer 2026 — weekly problem sets in Python.
 ## Project Structure
 
 ```
+references/              # central shared classes: Node, Villager, Player, ...
 week-XX/
   day-XX/
-    prob-set-XX/     # problem files: prob01.py, prob02.py, ...
-    session-notes/   # scratch files and notes from class
-  tests/
-    day-XX/
-      prob-set-XX/   # test files: test_prob03.py, conftest.py, ...
+    prob-set-XX/         # problem files: prob01.py, prob02.py, ...
+      tests/             # test files: test_prob01.py, conftest.py
+    session-notes/       # scratch files and notes from class
 ```
 
 Directories use zero-padded numbers: `week-01`, `day-01`, `prob-set-01`.
 
 ## Running Tests
 
+Tests live in a `tests/` folder INSIDE each prob-set. Run one set with one path:
+
 ```bash
-uv run pytest
+uv run pytest week-05/day-01/prob-set-01
 ```
 
-Tests use `conftest.py` for dynamic path resolution — no manual `sys.path` needed.
+Run tests per prob-set, NOT the whole repo — `uv run pytest` at the root
+collides on duplicate `test_probNN.py` module names across sets.
+Each `tests/` has a `conftest.py` that puts the parent prob-set dir on `sys.path`,
+so tests import `from probNN import fn` (and `from references import Node`) with no
+manual path setup. Failing/erroring tests for unwritten `pass`-stub solutions are
+expected — don't weaken the test to pass.
+
+Shared classes (`Node`, `Villager`, `Player`, …) live in one central repo-root
+`references/` package, each defined once as the superset version and imported via
+`from references import ...`. `pyproject.toml` puts the repo root on `sys.path`
+(`pythonpath = ["."]`) so the import resolves from any set.
 
 ## Python Version
 

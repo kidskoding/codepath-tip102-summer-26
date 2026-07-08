@@ -100,37 +100,36 @@ Rules for stubs:
 - Copy the signature EXACTLY as given (same name, params, type hints). Don't invent one.
 - **Skip debug/review problems** — if a problem has no function to implement (it's
   "find the bug" / "trace this code"), don't create a `probNN.py` for it (per CLAUDE.md).
-- **Shared classes go in a per-set `references/` package, NOT copied into each stub.**
-  If problems in the set share a class (`Node`, `Villager`, `Player`, …), create
-  `prob-set-XX/references/` with one file per class plus an `__init__.py` that
-  re-exports them, then have stubs and tests do `from references import Node`. The
-  per-set `tests/conftest.py` puts the prob-set dir on `sys.path`, so this resolves
-  to the LOCAL package (not any other week's). See the "Per-set references" section.
+- **Shared classes go in the central repo-root `references/` package, NOT copied
+  into each stub.** If problems share a class (`Node`, `Villager`, `Player`, …),
+  add it to `references/` and have stubs and tests do `from references import Node`.
+  See the "Central references" section.
 
-## Per-set references
+## Central references
 
-When a set's problems share a class, it lives ONCE in a `references/` package
-inside that prob-set — each set is self-contained, no repo-root shared module:
+Shared classes live ONCE in a single repo-root `references/` package. Every set
+imports from it; `pyproject.toml` has `pythonpath = ["."]` so it resolves anywhere:
 
 ```
+references/
+  __init__.py        # from .node import Node ; ... ; __all__ = ["Node", ...]
+  node.py            # class Node: ...
+  villager.py        # class Villager: ...
 week-XX/day-XX/prob-set-XX/
-  references/
-    __init__.py      # from .node import Node ; __all__ = ["Node"]
-    node.py          # class Node: ...
   prob01.py          # from references import Node
   tests/
     test_prob01.py   # from references import Node
 ```
 
 - One file per class (`node.py`, `villager.py`, `player.py`), `__init__.py` re-exports.
-- If the class evolves across the set (later problems add a field), define the
-  **superset** version in `references/` so every problem's usage works.
-- Stubs/tests import the class with `from references import ClassName` — NOT from
-  a `probNN` module, and NOT a copy pasted into each file.
+- If a class evolves across a set (later problems add a field), define the
+  **superset** version so every problem's usage works.
+- Stubs/tests import with `from references import ClassName` — NOT from a `probNN`
+  module, and NOT a copy pasted into each file.
 - Class-DEFINITION problems (the exercise is "write the class with method X") keep
   their own class in `probNN.py` — those aren't shared, they're the assignment.
-- Because every set names its package `references`, RUN TESTS PER SET (the module
-  name collides if two sets are collected in one `pytest` invocation).
+- Give each class a distinct name across the whole repo (one `Node`, one `Villager`)
+  since they now share a namespace.
 
 ## Then generate the tests
 
