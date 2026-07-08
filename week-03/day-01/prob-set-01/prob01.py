@@ -16,10 +16,13 @@
 
 def is_valid_post_format(posts: str) -> bool:
     brackets_dict = {')': '(', ']': '[', '}': '{'}
+    opening = set(brackets_dict.values())
     stack = []
 
     for ch in posts:
-        if ch in brackets_dict:
+        if ch in opening:
+            stack.append(ch)          # push opening brackets so they can be matched
+        elif ch in brackets_dict:
             if not stack:
                 return False
 
