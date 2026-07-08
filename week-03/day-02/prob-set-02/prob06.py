@@ -1,2 +1,2 @@
 def next_greater_event(schedule1, schedule2):
-    pass
+    raise NotImplementedError
