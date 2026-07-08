@@ -64,6 +64,74 @@ Output: ...
 ---
 ```
 
+## Also create probNN.py stub files
+
+After writing `problem-set.md`, create one `probNN.py` solution stub per problem
+in the SAME `prob-set-XX/` dir (zero-padded, matching the problem number):
+
+```
+week-XX/day-XX/prob-set-XX/
+  problem-set.md
+  prob01.py
+  prob02.py
+  ...
+```
+
+Each stub holds only the exact function signature from that problem, with a
+`raise NotImplementedError` body (NOT `pass`) — plus any class (e.g. `Node`) the
+signature depends on. Raising (instead of `pass`) lets the test conftest report
+unwritten solutions as **skipped** rather than failed:
+
+```python
+# prob03.py
+def partition(suspect_ratings, threshold):
+    raise NotImplementedError
+```
+
+Rules for stubs:
+- **Check the dir first (`ls`). If a `probNN.py` already exists, NEVER touch it** —
+  not the stub, not a rewrite, nothing. Skip every problem number already present,
+  whether the file has real code, a `pass` stub, or is empty. Only create stubs for
+  problem numbers with NO existing file.
+- One file per problem, `probNN` matching the `## Problem N` number.
+- **The FILE is always named `probNN.py` by problem number — ignore what the problem
+  calls the function.** "Write a function `welcome()`" → file `prob01.py`, NOT
+  `welcome.py`. The function name only lives inside the file as the signature.
+- Copy the signature EXACTLY as given (same name, params, type hints). Don't invent one.
+- **Skip debug/review problems** — if a problem has no function to implement (it's
+  "find the bug" / "trace this code"), don't create a `probNN.py` for it (per CLAUDE.md).
+- **Shared classes go in a per-set `references/` package, NOT copied into each stub.**
+  If problems in the set share a class (`Node`, `Villager`, `Player`, …), create
+  `prob-set-XX/references/` with one file per class plus an `__init__.py` that
+  re-exports them, then have stubs and tests do `from references import Node`. The
+  per-set `tests/conftest.py` puts the prob-set dir on `sys.path`, so this resolves
+  to the LOCAL package (not any other week's). See the "Per-set references" section.
+
+## Per-set references
+
+When a set's problems share a class, it lives ONCE in a `references/` package
+inside that prob-set — each set is self-contained, no repo-root shared module:
+
+```
+week-XX/day-XX/prob-set-XX/
+  references/
+    __init__.py      # from .node import Node ; __all__ = ["Node"]
+    node.py          # class Node: ...
+  prob01.py          # from references import Node
+  tests/
+    test_prob01.py   # from references import Node
+```
+
+- One file per class (`node.py`, `villager.py`, `player.py`), `__init__.py` re-exports.
+- If the class evolves across the set (later problems add a field), define the
+  **superset** version in `references/` so every problem's usage works.
+- Stubs/tests import the class with `from references import ClassName` — NOT from
+  a `probNN` module, and NOT a copy pasted into each file.
+- Class-DEFINITION problems (the exercise is "write the class with method X") keep
+  their own class in `probNN.py` — those aren't shared, they're the assignment.
+- Because every set names its package `references`, RUN TESTS PER SET (the module
+  name collides if two sets are collected in one `pytest` invocation).
+
 ## Rules
 
 1. **Strip noise** — remove emoji, hints, raw `print()` calls used as examples, duplicate blank lines, broken formatting from copy-paste

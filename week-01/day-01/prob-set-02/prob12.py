@@ -1,2 +1,2 @@
-def get_last(items):
+def shuffle(cards):
     raise NotImplementedError

@@ -1,2 +1,2 @@
-def get_last(items):
+def split_haycorns(quantity):
     raise NotImplementedError

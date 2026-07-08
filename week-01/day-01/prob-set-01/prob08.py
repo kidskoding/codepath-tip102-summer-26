@@ -1,2 +1,2 @@
-def get_last(items):
+def print_todo_list(tasks):
     raise NotImplementedError

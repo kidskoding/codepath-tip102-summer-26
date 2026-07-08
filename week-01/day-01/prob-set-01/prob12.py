@@ -1,2 +1,2 @@
-def get_last(items):
+def locate_thistles(items):
     raise NotImplementedError

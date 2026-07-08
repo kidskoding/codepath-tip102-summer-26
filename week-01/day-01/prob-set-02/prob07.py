@@ -1,2 +1,2 @@
-def get_last(items):
+def nanana_batman(x):
     raise NotImplementedError

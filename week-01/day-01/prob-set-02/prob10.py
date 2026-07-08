@@ -1,2 +1,2 @@
-def get_last(items):
+def up_and_down(lst):
     raise NotImplementedError

@@ -1,2 +1,2 @@
-def get_last(items):
+def get_odds(nums):
     raise NotImplementedError
