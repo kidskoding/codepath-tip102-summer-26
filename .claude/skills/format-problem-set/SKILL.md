@@ -132,6 +132,15 @@ week-XX/day-XX/prob-set-XX/
 - Because every set names its package `references`, RUN TESTS PER SET (the module
   name collides if two sets are collected in one `pytest` invocation).
 
+## Then generate the tests
+
+After `problem-set.md` and the stubs are written, ALWAYS chain into the
+`examples-to-tests` skill for the same prob-set(s) — invoke it via the Skill
+tool (`skill: "examples-to-tests"`) with the prob-set path(s) as args. That
+skill reads the examples you just wrote and produces `tests/` + `test_probNN.py`.
+Do this automatically; don't wait for the user to ask. Skip only if the user
+explicitly said "no tests" / "just the markdown".
+
 ## Rules
 
 1. **Strip noise** — remove emoji, hints, raw `print()` calls used as examples, duplicate blank lines, broken formatting from copy-paste
