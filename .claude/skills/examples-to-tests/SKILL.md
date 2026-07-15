@@ -9,6 +9,35 @@ description: Use when asked to turn a problem set's examples into pytest tests, 
 
 Turn the worked examples in a problem set into runnable pytest files, one `test_probNN.py` per problem, placed in the mirrored `tests/` tree. Mechanically follows the existing week-01 convention — don't invent a new layout.
 
+## Cover EVERY problem (do this first)
+
+Enumerate every `## Problem N` heading in `problem-set.md`. Produce one test per
+problem, NOT one per existing `probNN.py` — a problem with no solution file yet
+still gets a test.
+
+**Skip a problem (write NO test) when there's nothing meaningful to assert:**
+- a debugging/review/"fix this code" problem with no function signature, OR
+- a **print-only** problem — the function just `print`s and returns `None`, with
+  no return value and no object state to inspect. Do NOT use `capsys` /
+  stdout-capture to test these. If the only "output" is a printed string, skip
+  the problem entirely — a print statement isn't worth a test.
+
+Everything else (a real return value, or observable object/list state after the
+call) gets a faithful test.
+
+For each problem `N` with no `probNN.py`, first create the stub so its test can
+import and skip:
+```python
+# probNN.py
+from references import Node  # only if the signature uses Node
+
+def function_name(...):
+    raise NotImplementedError
+```
+Then write `test_probNN.py` for it like any other. Result: a set with 6 problems
+and 2 solutions yields 6 test files — 2 pass, 4 skip. Never stop at the count of
+existing solution files.
+
 ## Where tests go
 
 Tests live in a `tests/` folder INSIDE each prob-set, next to the problems:
@@ -53,28 +82,68 @@ return. Never touch a stub that already has a real solution.
 
 ## test_probNN.py template
 
-One import, one `test_probNN()` function, one `assert` per example:
+Use `@pytest.mark.parametrize` with one row per case — the given examples PLUS
+the obvious edge cases. Each case runs and is reported independently, so one
+failing case doesn't mask the others (stacked `assert`s stop at the first
+failure — don't use them for multiple cases):
 
 ```python
+import pytest
 from probNN import function_name
 
-def test_probNN():
-    assert function_name(input1) == expected1
-    assert function_name(input2) == expected2
+@pytest.mark.parametrize("arg, expected", [
+    (input1, expected1),   # example from problem-set.md
+    (input2, expected2),   # example from problem-set.md
+    (empty,  expected_e),  # edge case (see below), answer computed by hand
+    (single, expected_s),  # edge case
+])
+def test_probNN(arg, expected):
+    assert function_name(arg) == expected
+```
+
+For a multi-arg signature, widen the param string and unpack:
+```python
+@pytest.mark.parametrize("a, b, expected", [
+    (input_a, input_b, expected1),
+])
+def test_probNN(a, b, expected):
+    assert function_name(a, b) == expected
 ```
 
 Rules:
 - Import the exact function name from the problem's signature.
-- One assert per Input/Output example in `problem-set.md`. Use the real values from the examples, not paraphrases.
+- One parametrize row per Input/Output example in `problem-set.md`, using the real values, not paraphrases — then add the edge-case rows below.
 - Test function is named `test_probNN` matching the file.
-- No pytest fixtures, no parametrize, no extra edge cases the examples don't state — keep it a faithful transcription of the given examples. (Add an obvious edge case like empty input only if the problem's examples include it.)
+- `parametrize` is the one pytest feature to use here (for per-case failure isolation). Still no other fixtures and no speculative test scaffolding.
+
+### Add the obvious edge cases (don't stop at the given example)
+
+A single example passing hides bugs — a linked-list solution that "works" can
+still crash on a single node or drop a final carry. Beyond the stated examples,
+add the edge cases that are **obvious and unambiguous for that problem shape** —
+ones where you can compute the correct answer by hand with certainty. Only add a
+case when you're sure of its expected value; never invent an input whose output
+you'd have to guess.
+
+Common ones by shape:
+- **Any list/collection input** → empty input (`[]` / `None`) and a single-element input.
+- **Linked-list rotate / shift / partition by `k`** → `k = 0`, `k` larger than the list length (wrap-around), and a single-node list.
+- **Add / sum of digits or numbers** → a case whose final step carries (e.g. `5 + 5`, `99 + 1`) so the trailing carry node is exercised.
+- **Cycle / two-pointer** → no-cycle, whole-list cycle, and single node.
+- **Search / index** → target absent (returns -1 / None), first element, last element.
+- **String/number transforms** → empty string / `0`, and a value that stays the same after the transform.
+
+Pick the 1–3 that actually apply to the problem; skip ones that don't fit. If
+the function's edge behavior is genuinely ambiguous from the spec (not clearly
+defined), leave that case out rather than assert a guessed value.
 
 ## Linked lists (and other object inputs)
 
 When examples use a `Node`/linked list, the raw `print(func(...))` won't translate to `==` directly. Two helpers make it work — define them at the top of the test file:
 
 ```python
-from prob04 import Node, merge_timelines   # import Node from the SAME solution file
+from references import Node        # shared class, repo-root references package
+from prob04 import merge_timelines  # the solution under test
 
 def build(values):
     """list -> linked list, returns head"""
@@ -91,15 +160,25 @@ def to_list(head):
         head = head.next
     return out
 
-def test_prob04():
-    a = build([1, 2, 4])
-    b = build([1, 3, 4])
-    assert to_list(merge_timelines(a, b)) == [1, 1, 2, 3, 4, 4]
+@pytest.mark.parametrize("a_vals, b_vals, expected", [
+    ([1, 2, 4], [1, 3, 4], [1, 1, 2, 3, 4, 4]),  # example
+    ([],        [1],       [1]),                  # one empty
+    ([],        [],        []),                   # both empty
+])
+def test_prob04(a_vals, b_vals, expected):
+    assert to_list(merge_timelines(build(a_vals), build(b_vals))) == expected
 ```
 
-- Import `Node` from the solution file, don't redefine it (identity comparisons must match).
+- Pass plain lists in the parametrize rows and call `build()` inside the test
+  body — keeps the rows readable and rebuilds fresh nodes per case.
+- Import `Node` from `references` (`from references import Node`) — the shared
+  class every solution uses. `conftest.py` puts the repo root on `sys.path`, and
+  its attribute is `.value` (not `.val`).
 - Compare on the list form (`to_list`) or a boolean the function returns — never on Node objects directly unless the function returns a bool.
-- For a `bool`-returning problem (e.g. `is_circular`), build the structure by hand (including the cycle) and assert `== True`/`== False`.
+- For a `bool`-returning problem (e.g. `is_circular`), the structure (esp. a
+  cycle) can't be expressed as a plain list — build it by hand in the test body
+  and assert `== True`/`== False`. A plain `def test_probNN()` is fine here
+  instead of parametrize when each case needs custom wiring.
 
 ## After writing
 

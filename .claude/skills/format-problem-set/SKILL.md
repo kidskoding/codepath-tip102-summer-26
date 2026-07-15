@@ -9,6 +9,26 @@ description: Use when given raw copy-pasted problem set text (from CodePath, Lee
 
 Convert raw copy-pasted problem text into a clean, structured markdown file formatted like a HackerRank/CodePath problem set. One problem per `##` section, consistent structure throughout.
 
+## Non-algorithmic problems → mark (SKIPPED), no stub
+
+If a problem is NOT an algorithmic implementation problem — i.e. there is no
+function for the student to write — it gets SKIPPED. This covers discuss/compare
+problems ("compare your solution to the one below", "which do you prefer?",
+"discuss with your podmates"), debug/review/trace problems, and any prompt whose
+"answer" is prose rather than code.
+
+For a skipped problem:
+- In `problem-set.md`, title it `## Problem N: [Title] (SKIPPED)` and keep a short
+  Description so the numbering stays intact, but DO NOT add a Function Signature,
+  Examples, or Constraints section. A one-line note like
+  `_Discussion/comparison problem — no implementation._` is enough.
+- Create NO `probNN.py` stub for it.
+- The `examples-to-tests` step also skips it (no signature = no test).
+
+A problem that DOES have a function to implement but also asks a discussion
+question (e.g. "implement X, then discuss the tradeoffs") is NOT skipped — format
+it normally; the discussion prompt is just dropped.
+
 ## Output File Location
 
 Save to the most relevant path in the project. Default:
