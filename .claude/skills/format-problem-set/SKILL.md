@@ -101,16 +101,18 @@ week-XX/day-XX/prob-set-XX/
   ...
 ```
 
-Each stub holds only the exact function signature from that problem, with a
-`raise NotImplementedError` body (NOT `pass`) — plus any class (e.g. `Node`) the
-signature depends on. Raising (instead of `pass`) lets the test conftest report
-unwritten solutions as **skipped** rather than failed:
+Each stub holds only the exact function signature from that problem, with a `pass`
+body — plus any class (e.g. `Node`) the signature depends on:
 
 ```python
 # prob03.py
 def prob03(suspect_ratings, threshold):
-    raise NotImplementedError
+    pass
 ```
+
+The test conftest detects a `pass`-only body and reports unwritten solutions as
+**skipped** rather than failed, so `pass` costs nothing. Never `raise
+NotImplementedError`.
 
 Rules for stubs:
 - **Check the dir first (`ls`). If a `probNN.py` already exists, NEVER touch it** —

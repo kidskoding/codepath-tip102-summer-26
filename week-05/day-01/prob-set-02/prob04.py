@@ -5,4 +5,4 @@ class Player():
         self.items = []
 
     def set_character(self, name):
-        raise NotImplementedError
+        pass

@@ -26,9 +26,11 @@ uv run pytest week-05/day-01/prob-set-01
 Run tests per prob-set, NOT the whole repo — `uv run pytest` at the root
 collides on duplicate `test_probNN.py` module names across sets.
 Each `tests/` has a `conftest.py` that puts the parent prob-set dir on `sys.path`,
-so tests import `from probNN import fn` (and `from references import Node`) with no
-manual path setup. Failing/erroring tests for unwritten `pass`-stub solutions are
-expected — don't weaken the test to pass.
+so tests import `from probNN import probNN` (and `from references import Node`) with
+no manual path setup. That conftest also reports unwritten solutions as **skipped**:
+it reads `probNN.py` and skips the test while any function there is still a bare
+`pass`. Solutions stub with `pass`, never `raise NotImplementedError`. A test that
+fails (rather than skips) is a real failure — don't weaken the test to pass.
 
 Shared classes (`Node`, `Villager`, `Player`, …) live in one central repo-root
 `references/` package, each defined once as the superset version and imported via

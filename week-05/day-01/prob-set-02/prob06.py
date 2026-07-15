@@ -5,4 +5,4 @@ class Player():
         self.items = []
 
     def print_inventory(self):
-        raise NotImplementedError
+        pass

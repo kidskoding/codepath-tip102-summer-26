@@ -32,7 +32,7 @@ import and skip:
 from references import Node  # only if the signature uses Node
 
 def probNN(...):
-    raise NotImplementedError
+    pass
 ```
 Then write `test_probNN.py` for it like any other. Result: a set with 6 problems
 and 2 solutions yields 6 test files — 2 pass, 4 skip. Never stop at the count of
@@ -54,31 +54,54 @@ set with one path: `uv run pytest week-XX/day-XX/prob-set-XX`.
 ## conftest.py (copy verbatim)
 
 Every `tests/` folder needs this `conftest.py`. It (1) puts the PARENT prob-set
-dir on `sys.path` so `from probNN import fn` resolves, and (2) turns an
-unimplemented stub (`raise NotImplementedError`) into a **skip** instead of a
-failure. Create it if missing; copy verbatim, never edit:
+dir on `sys.path` so `from probNN import probNN` resolves, and (2) turns an
+unwritten stub into a **skip** instead of a failure. Create it if missing; copy
+verbatim, never edit:
 
 ```python
+import ast
 import sys
 from pathlib import Path
 
 import pytest
 
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+PROB_SET = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(PROB_SET))
 
 
-def pytest_runtest_call(item):
-    # Unimplemented stubs raise NotImplementedError -> report as skipped, not failed.
-    try:
-        item.runtest()
-    except NotImplementedError:
+def _is_stub(fn):
+    """True if fn's body is just `pass` (ignoring a docstring)."""
+    body = [
+        n
+        for n in fn.body
+        if not (
+            isinstance(n, ast.Expr)
+            and isinstance(n.value, ast.Constant)
+            and isinstance(n.value.value, str)
+        )
+    ]
+    return len(body) == 1 and isinstance(body[0], ast.Pass)
+
+
+def pytest_runtest_setup(item):
+    # test_probNN.py -> probNN.py; an unwritten `pass` stub skips, not fails.
+    src = PROB_SET / f"{item.path.stem.removeprefix('test_')}.py"
+    if not src.exists():
+        return
+    fns = [
+        n
+        for n in ast.walk(ast.parse(src.read_text()))
+        if isinstance(n, (ast.FunctionDef, ast.AsyncFunctionDef))
+    ]
+    if any(_is_stub(fn) for fn in fns):
         pytest.skip("not implemented")
 ```
 
-For this to work, unwritten stubs must `raise NotImplementedError` (not `pass`).
-If a `probNN.py` under test is still `pass`, change its body to
-`raise NotImplementedError` so its test **skips** rather than fails on a `None`
-return. Never touch a stub that already has a real solution.
+Unwritten stubs are `pass` (never `raise NotImplementedError`) — the conftest reads
+the source and skips as soon as any function in `probNN.py` is still a bare `pass`.
+That covers class problems too, where `__init__` is given but the method under test
+is a stub. Once every function has a real body, the tests run. Never touch a stub
+that already has a real solution.
 
 ## test_probNN.py template
 
@@ -188,11 +211,10 @@ Run and confirm implemented ones pass and unwritten ones **skip**:
 ```bash
 uv run pytest week-XX/day-XX/prob-set-XX -q
 ```
-Expected output shape: `N passed, M skipped`. A `skipped` test = its `probNN.py`
-still raises `NotImplementedError` — that's correct, the solution just isn't
-written yet. You should see NO failures. A failure means either a wrong
-expected value in the test or a real solution bug — never "fix" it by weakening
-the test.
+Expected output shape: `N passed, M skipped`. A `skipped` test = its `probNN.py` is
+still a bare `pass` stub — that's correct, the solution just isn't written yet. You
+should see NO failures. A failure means either a wrong expected value in the test or
+a real solution bug — never "fix" it by weakening the test.
 
 ## Don't
 

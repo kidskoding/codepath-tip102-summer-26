@@ -6,4 +6,4 @@ class Villager:
         self.furniture = []
 
     def set_catchphrase(self, new_catchphrase):
-        raise NotImplementedError
+        pass

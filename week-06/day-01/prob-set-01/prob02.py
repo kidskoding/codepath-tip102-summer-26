@@ -2,4 +2,4 @@ from references import Node
 
 
 def prob02(playlist: Node):
-    raise NotImplementedError
+    pass

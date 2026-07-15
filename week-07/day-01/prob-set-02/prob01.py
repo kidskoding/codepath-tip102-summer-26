@@ -1,6 +1,6 @@
 def get_village_class_iterative(population):
-    raise NotImplementedError
+    pass
 
 
 def get_village_class_recursive(population):
-    raise NotImplementedError
+    pass

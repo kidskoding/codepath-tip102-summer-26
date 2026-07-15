@@ -6,4 +6,4 @@ class Villager:
         self.furniture = []
 
     def add_item(self, item_name):
-        raise NotImplementedError
+        pass
