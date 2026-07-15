@@ -15,11 +15,11 @@ pythonpath = ["."]
 [tool.basedpyright]
 typeCheckingMode = "basic"
 reportOptionalMemberAccess = "none"
-# One environment PER prob-set (root = the set). Its extraPaths are only itself
-# (so `from probNN import fn` resolves to THIS set's probNN, not a same-named
-# file in a sibling set) plus "." for `from references import ...`. Lumping
-# multiple sets into one env makes duplicate module names (prob06, ...) resolve
-# to the wrong file. Add a new row when you add a new prob-set/session-notes dir.
+# Unwritten solutions are `pass` stubs, which return None and so contradict any
+# declared `-> list[str]` etc. Off so stubs are clean. Trade-off: a real
+# wrong-return-type bug in a WRITTEN solution won't be flagged either.
+reportReturnType = "none"
+
 executionEnvironments = [
     { root = "week-01/day-01/prob-set-01", extraPaths = [".", "week-01/day-01/prob-set-01"] },
     { root = "week-01/day-01/prob-set-02", extraPaths = [".", "week-01/day-01/prob-set-02"] },
