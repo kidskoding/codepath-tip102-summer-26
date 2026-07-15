@@ -14,17 +14,30 @@ pythonpath = ["."]
 
 [tool.basedpyright]
 typeCheckingMode = "basic"
+reportOptionalMemberAccess = "none"
+# One environment PER prob-set (root = the set). Its extraPaths are only itself
+# (so `from probNN import fn` resolves to THIS set's probNN, not a same-named
+# file in a sibling set) plus "." for `from references import ...`. Lumping
+# multiple sets into one env makes duplicate module names (prob06, ...) resolve
+# to the wrong file. Add a new row when you add a new prob-set/session-notes dir.
 executionEnvironments = [
-    { root = "week-01", extraPaths = ["week-01/day-01/prob-set-01", "week-01/day-01/prob-set-02"] },
-    { root = "week-02", extraPaths = ["week-02/day-01/prob-set-01", "week-02/day-01/prob-set-02"] },
-    { root = "week-03", extraPaths = ["week-03/day-01/prob-set-01", "week-03/day-01/prob-set-02"] },
-    { root = "week-04", extraPaths = ["week-04/day-01/prob-set-01", "week-04/day-01/prob-set-02"] },
-    { root = "week-05", extraPaths = ["week-05/day-01/prob-set-01", "week-05/day-01/prob-set-02", "week-05/day-01/session-notes"] },
-    { root = "week-06", extraPaths = [".", "week-06/day-01/prob-set-01", "week-06/day-01/prob-set-02", "week-06/day-02/prob-set-01"] },
-    { root = "week-07", extraPaths = ["week-07/day-01/prob-set-01", "week-07/day-01/prob-set-02"] },
-    { root = "week-08", extraPaths = ["week-08/day-01/prob-set-01", "week-08/day-01/prob-set-02"] },
-    { root = "week-09", extraPaths = ["week-09/day-01/prob-set-01", "week-09/day-01/prob-set-02"] },
-    { root = "week-10", extraPaths = ["week-10/day-01/prob-set-01", "week-10/day-01/prob-set-02"] },
-    { root = "week-11", extraPaths = ["week-11/day-01/prob-set-01", "week-11/day-01/prob-set-02"] },
-    { root = "week-12", extraPaths = ["week-12/day-01/prob-set-01", "week-12/day-01/prob-set-02"] },
+    { root = "week-01/day-01/prob-set-01", extraPaths = [".", "week-01/day-01/prob-set-01"] },
+    { root = "week-01/day-01/prob-set-02", extraPaths = [".", "week-01/day-01/prob-set-02"] },
+    { root = "week-01/day-02/session-notes", extraPaths = [".", "week-01/day-02/session-notes"] },
+    { root = "week-02/day-01/prob-set-01", extraPaths = [".", "week-02/day-01/prob-set-01"] },
+    { root = "week-02/day-01/session-notes", extraPaths = [".", "week-02/day-01/session-notes"] },
+    { root = "week-02/day-02/session-notes", extraPaths = [".", "week-02/day-02/session-notes"] },
+    { root = "week-03/day-01/prob-set-01", extraPaths = [".", "week-03/day-01/prob-set-01"] },
+    { root = "week-03/day-02/prob-set-02", extraPaths = [".", "week-03/day-02/prob-set-02"] },
+    { root = "week-04/day-01/prob-set-01", extraPaths = [".", "week-04/day-01/prob-set-01"] },
+    { root = "week-04/day-01/session-notes", extraPaths = [".", "week-04/day-01/session-notes"] },
+    { root = "week-04/day-02/prob-set-01", extraPaths = [".", "week-04/day-02/prob-set-01"] },
+    { root = "week-05/day-01/prob-set-01", extraPaths = [".", "week-05/day-01/prob-set-01"] },
+    { root = "week-05/day-01/prob-set-02", extraPaths = [".", "week-05/day-01/prob-set-02"] },
+    { root = "week-05/day-01/session-notes", extraPaths = [".", "week-05/day-01/session-notes"] },
+    { root = "week-06/day-01/prob-set-01", extraPaths = [".", "week-06/day-01/prob-set-01"] },
+    { root = "week-06/day-01/prob-set-02", extraPaths = [".", "week-06/day-01/prob-set-02"] },
+    { root = "week-06/day-01/session-notes", extraPaths = [".", "week-06/day-01/session-notes"] },
+    { root = "week-06/day-02/prob-set-01", extraPaths = [".", "week-06/day-02/prob-set-01"] },
+    { root = "week-07/day-01/prob-set-01", extraPaths = [".", "week-07/day-01/prob-set-01"] },
 ]
