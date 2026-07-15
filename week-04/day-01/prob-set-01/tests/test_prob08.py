@@ -1,5 +1,5 @@
 import pytest
-from prob08 import find_closest_nft_values
+from prob08 import prob08
 
 
 @pytest.mark.parametrize("values, target, expected", [
@@ -8,4 +8,4 @@ from prob08 import find_closest_nft_values
     ([1.0, 2.5, 4.0, 6.0, 9.0], 3.0, (2.5, 4.0)),
 ])
 def test_prob08(values, target, expected):
-    assert find_closest_nft_values(values, target) == expected
+    assert prob08(values, target) == expected

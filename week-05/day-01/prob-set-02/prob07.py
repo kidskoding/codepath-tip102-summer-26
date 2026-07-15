@@ -1,2 +1,2 @@
-def print_results(race_results):
+def prob07(race_results):
     raise NotImplementedError

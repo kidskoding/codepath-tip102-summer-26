@@ -1,5 +1,5 @@
 import pytest
-from prob07 import post_compare
+from prob07 import prob07
 
 @pytest.mark.parametrize("s, t, expected", [
     ("ab#c", "ad#c", True),
@@ -11,4 +11,4 @@ from prob07 import post_compare
     ("a", "", False),      # non-empty vs empty
 ])
 def test_prob07(s, t, expected):
-    assert post_compare(s, t) == expected
+    assert prob07(s, t) == expected

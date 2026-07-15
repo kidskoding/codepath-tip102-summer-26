@@ -1,5 +1,5 @@
 import pytest
-from prob06 import strongest_avenger
+from prob06 import prob06
 
 
 @pytest.mark.parametrize("strengths, expected", [
@@ -8,4 +8,4 @@ from prob06 import strongest_avenger
     ([7], 7),                              # single element
 ])
 def test_prob06(strengths, expected):
-    assert strongest_avenger(strengths) == expected
+    assert prob06(strengths) == expected

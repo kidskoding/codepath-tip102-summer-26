@@ -1,5 +1,5 @@
 import pytest
-from prob07 import count_deposits
+from prob07 import prob07
 
 
 @pytest.mark.parametrize("resources, expected", [
@@ -10,4 +10,4 @@ from prob07 import count_deposits
     ("V", 1),         # single deposit
 ])
 def test_prob07(resources, expected):
-    assert count_deposits(resources) == expected
+    assert prob07(resources) == expected

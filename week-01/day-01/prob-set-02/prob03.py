@@ -1,2 +1,2 @@
-def trilogy(year):
+def prob03(year):
     raise NotImplementedError

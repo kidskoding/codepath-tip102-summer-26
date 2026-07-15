@@ -14,7 +14,7 @@
     Space: O(1)
 '''
 
-def is_symmetrical_title(title: str) -> bool:
+def prob03(title: str) -> bool:
     import re
 
     title = title.lower()

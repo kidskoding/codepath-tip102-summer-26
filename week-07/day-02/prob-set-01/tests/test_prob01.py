@@ -1,5 +1,5 @@
 import pytest
-from prob01 import find_cruise_length
+from prob01 import prob01
 
 
 @pytest.mark.parametrize("cruise_lengths, vacation_length, expected", [
@@ -10,4 +10,4 @@ from prob01 import find_cruise_length
     ([5], 3, False),                           # single no match
 ])
 def test_prob01(cruise_lengths, vacation_length, expected):
-    assert find_cruise_length(cruise_lengths, vacation_length) == expected
+    assert prob01(cruise_lengths, vacation_length) == expected

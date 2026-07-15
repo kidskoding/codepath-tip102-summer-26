@@ -183,7 +183,7 @@ Output: acoustic guitar: 1, ironwood kitchenette: 1, kotatsu: 2
 
 ### Description
 
-The `Villager` class has been updated to include a `personality` attribute. Outside of the class, write a function `of_personality_type()` that takes a list of `Villager` instances `townies` and a string `personality_type`, and returns a list of names of all villagers with that personality. Return names in any order.
+The `Villager` class has been updated to include a `personality` attribute. Outside of the class, write a function `prob07()` that takes a list of `Villager` instances `townies` and a string `personality_type`, and returns a list of names of all villagers with that personality. Return names in any order.
 
 ```python
 class Villager:
@@ -198,7 +198,7 @@ class Villager:
 ### Function Signature
 
 ```python
-def of_personality_type(townies, personality_type):
+def prob07(townies, personality_type):
     pass
 ```
 
@@ -209,13 +209,13 @@ def of_personality_type(townies, personality_type):
 Input:  isabelle = Villager("Isabelle", "Dog", "Normal", "what's up?")
         bob = Villager("Bob", "Cat", "Lazy", "pthhhpth")
         stitches = Villager("Stitches", "Cub", "Lazy", "stuffin'")
-        of_personality_type([isabelle, bob, stitches], "Lazy")
+        prob07([isabelle, bob, stitches], "Lazy")
 Output: ["Bob", "Stitches"]
 ```
 
 **Example 2:**
 ```
-Input:  of_personality_type([isabelle, bob, stitches], "Cranky")
+Input:  prob07([isabelle, bob, stitches], "Cranky")
 Output: []
 ```
 
@@ -227,7 +227,7 @@ Output: []
 
 The `Villager` class has been updated with a `neighbor` attribute representing a villager's closest neighbor (another `Villager` instance, defaulting to `None`).
 
-Write a function `message_received()` that takes two `Villager` instances `start_villager` and `target_villager`, and returns `True` if a message can be passed from `start_villager` to `target_villager` through a chain of neighbors, and `False` otherwise.
+Write a function `prob08()` that takes two `Villager` instances `start_villager` and `target_villager`, and returns `True` if a message can be passed from `start_villager` to `target_villager` through a chain of neighbors, and `False` otherwise.
 
 ```python
 class Villager:
@@ -243,7 +243,7 @@ class Villager:
 ### Function Signature
 
 ```python
-def message_received(start_villager, target_villager):
+def prob08(start_villager, target_villager):
     pass
 ```
 
@@ -253,14 +253,14 @@ def message_received(start_villager, target_villager):
 ```
 Input:  isabelle.neighbor = tom_nook
         tom_nook.neighbor = kk_slider
-        message_received(isabelle, kk_slider)
+        prob08(isabelle, kk_slider)
 Output: True
 Explanation: Isabelle → Tom Nook → K.K. Slider. Target reached.
 ```
 
 **Example 2:**
 ```
-Input:  message_received(kk_slider, isabelle)
+Input:  prob08(kk_slider, isabelle)
 Output: False
 Explanation: K.K. Slider has no neighbor, so the message cannot be passed.
 ```
@@ -347,12 +347,12 @@ None
 
 ### Description
 
-Write a function `print_list()` that takes the head of a linked list and returns a string of all node values joined by `" -> "`.
+Write a function `prob12()` that takes the head of a linked list and returns a string of all node values joined by `" -> "`.
 
 ### Function Signature
 
 ```python
-def print_list(head):
+def prob12(head):
     pass
 ```
 

@@ -1,5 +1,5 @@
 import pytest
-from prob02 import count_walls
+from prob02 import prob02
 
 
 @pytest.mark.parametrize("walls, expected", [
@@ -9,4 +9,4 @@ from prob02 import count_walls
     ([[]], 2),                                 # edge: one nested empty list
 ])
 def test_prob02(walls, expected):
-    assert count_walls(walls) == expected
+    assert prob02(walls) == expected

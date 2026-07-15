@@ -1,2 +1,2 @@
-def survey_tree(root):
+def prob06(root):
     raise NotImplementedError

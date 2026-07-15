@@ -1,2 +1,2 @@
-def count_leaves(root):
+def prob05(root):
     raise NotImplementedError

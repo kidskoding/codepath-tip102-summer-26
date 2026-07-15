@@ -44,14 +44,14 @@ Output: 1
 
 ### Description
 
-In a faraway kingdom, a castle is surrounded by multiple defensive walls, where each wall is nested within another. Given a list of lists `walls` where each list `[]` represents a wall, write a recursive function `count_walls()` that returns the total number of walls.
+In a faraway kingdom, a castle is surrounded by multiple defensive walls, where each wall is nested within another. Given a list of lists `walls` where each list `[]` represents a wall, write a recursive function `prob02()` that returns the total number of walls.
 
 Evaluate the time complexity of your solution. Define your variables and provide a rationale for why you believe your solution has the stated time complexity.
 
 ### Function Signature
 
 ```python
-def count_walls(walls):
+def prob02(walls):
     pass
 ```
 
@@ -84,7 +84,7 @@ Evaluate the time complexity of your solution. Define your variables and provide
 ### Function Signature
 
 ```python
-def reverse_scroll(scroll):
+def prob03(scroll):
     pass
 ```
 
@@ -117,7 +117,7 @@ Evaluate the time complexity of your solution. Define your variables and provide
 ### Function Signature
 
 ```python
-def is_palindrome(name):
+def prob04(name):
     pass
 ```
 
@@ -156,7 +156,7 @@ Evaluate the time complexity of your solution. Define your variables and provide
 ### Function Signature
 
 ```python
-def double_power(initial_power, n):
+def prob05(initial_power, n):
     pass
 ```
 
@@ -191,7 +191,7 @@ Evaluate the time complexity of your solution. Define your variables and provide
 ### Function Signature
 
 ```python
-def is_increasing_path(path):
+def prob06(path):
     pass
 ```
 
@@ -224,7 +224,7 @@ Evaluate the time complexity of your solution. Define your variables and provide
 ### Function Signature
 
 ```python
-def longest_streak(challenges, current_length=0, max_length=0):
+def prob07(challenges, current_length=0, max_length=0):
     pass
 ```
 
@@ -250,7 +250,7 @@ Output: 1
 
 ### Description
 
-A magician can double a spell's power if they merge two incantations together. Given the heads of two linked lists `spell_a` and `spell_b` where each node in the lists contains a spell segment, write a recursive function `weave_spells()` that weaves the spells in the pattern:
+A magician can double a spell's power if they merge two incantations together. Given the heads of two linked lists `spell_a` and `spell_b` where each node in the lists contains a spell segment, write a recursive function `prob08()` that weaves the spells in the pattern:
 
 ```
 a1 -> b1 -> a2 -> b2 -> a3 -> b3 -> ...
@@ -266,7 +266,7 @@ class Node:
         self.value = value
         self.next = next
 
-def weave_spells(spell_a, spell_b):
+def prob08(spell_a, spell_b):
     pass
 ```
 
@@ -285,4 +285,4 @@ Output: A -> B -> C -> D -> E -> F
 
 _Discussion/comparison problem — no implementation._
 
-Compare your recursive `weave_spells()` from Problem 8 to the iterative solution provided in the source, and discuss with your podmates which you prefer.
+Compare your recursive `prob08()` from Problem 8 to the iterative solution provided in the source, and discuss with your podmates which you prefer.

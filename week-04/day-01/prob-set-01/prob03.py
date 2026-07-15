@@ -1,7 +1,7 @@
 # Time: O(n)
 # Space: O(n)
 
-def identify_popular_creators(nft_collection):
+def prob03(nft_collection):
     if not nft_collection or len(nft_collection) == 1:
         return []
 

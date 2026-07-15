@@ -1,4 +1,4 @@
-def count_checked_in_passengers(rooms):
+def prob03(rooms):
     low, high = 0, len(rooms)
     while low < high:
         mid = (low + high) // 2

@@ -1,5 +1,5 @@
 import pytest
-from prob05 import sum_honey
+from prob05 import prob05
 
 @pytest.mark.parametrize("nums, expected", [
     ([2, 3, 4, 5], 14),
@@ -7,4 +7,4 @@ from prob05 import sum_honey
     ([], 0),
 ])
 def test_prob05(nums, expected):
-    assert sum_honey(nums) == expected
+    assert prob05(nums) == expected

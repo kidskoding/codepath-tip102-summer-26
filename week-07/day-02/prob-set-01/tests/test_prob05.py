@@ -1,5 +1,5 @@
 import pytest
-from prob05 import find_shallowest_point
+from prob05 import prob05
 
 
 @pytest.mark.parametrize("depths, expected", [
@@ -9,4 +9,4 @@ from prob05 import find_shallowest_point
     ([3, 1, 1], 1),            # duplicated minimum
 ])
 def test_prob05(depths, expected):
-    assert find_shallowest_point(depths) == expected
+    assert prob05(depths) == expected

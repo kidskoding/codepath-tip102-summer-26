@@ -10,7 +10,7 @@
 
 You're a detective and have been given an anonymous tip on your latest case, but something about it seems fishy — you suspect the clue might be a red herring meant to send you around in circles.
 
-Write a function `is_circular()` that accepts the head of a singly linked list `clues` and returns `True` if the tail of the linked list points at the head of the linked list. Otherwise, return `False`.
+Write a function `prob01()` that accepts the head of a singly linked list `clues` and returns `True` if the tail of the linked list points at the head of the linked list. Otherwise, return `False`.
 
 Evaluate the time and space complexity of your solution. Define your variables and provide a rationale for why you believe your solution has the stated time and space complexity.
 
@@ -22,7 +22,7 @@ class Node:
         self.value = value
         self.next = next
 
-def is_circular(clues):
+def prob01(clues):
     pass
 ```
 
@@ -45,7 +45,7 @@ Output: True
 
 All the clues that lead us in circles are false evidence we need to purge! Given the head of a linked list `evidence`, clean up the evidence list by identifying any false clues.
 
-Write a function `collect_false_evidence()` that returns an array containing all values that are part of any cycle in `evidence`. Return the values in any order.
+Write a function `prob02()` that returns an array containing all values that are part of any cycle in `evidence`. Return the values in any order.
 
 Evaluate the time and space complexity of your solution. Define your variables and provide a rationale for why you believe your solution has the stated time and space complexity.
 
@@ -57,7 +57,7 @@ class Node:
         self.value = value
         self.next = next
 
-def collect_false_evidence(evidence):
+def prob02(evidence):
     pass
 ```
 
@@ -89,7 +89,7 @@ Output: []
 
 You've identified a list of suspects, but time is limited and you won't be able to question all of them today.
 
-Write a function `partition()` to help prioritize the order in which you question suspects. Given the head of a linked list of integers `suspect_ratings`, where each integer represents the suspiciousness of a given suspect, and a value `threshold`, partition the linked list such that all nodes with values greater than `threshold` come before nodes with values less than or equal to `threshold`.
+Write a function `prob03()` to help prioritize the order in which you question suspects. Given the head of a linked list of integers `suspect_ratings`, where each integer represents the suspiciousness of a given suspect, and a value `threshold`, prob03 the linked list such that all nodes with values greater than `threshold` come before nodes with values less than or equal to `threshold`.
 
 Return the head of the partitioned list.
 
@@ -107,7 +107,7 @@ class Node:
         self.value = value
         self.next = next
 
-def partition(suspect_ratings, threshold):
+def prob03(suspect_ratings, threshold):
     pass
 ```
 
@@ -143,7 +143,7 @@ class Node:
         self.value = value
         self.next = next
 
-def merge_timelines(known_timeline, witness_timeline):
+def prob04(known_timeline, witness_timeline):
     pass
 ```
 
@@ -178,7 +178,7 @@ class Node:
         self.value = value
         self.next = next
 
-def rotate_right(evidence, k):
+def prob05(evidence, k):
     pass
 ```
 
@@ -218,7 +218,7 @@ class Node:
         self.value = value
         self.next = next
 
-def add_two_numbers(head_a, head_b):
+def prob06(head_a, head_b):
     pass
 ```
 

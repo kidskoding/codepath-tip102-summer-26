@@ -1,2 +1,2 @@
-def booth_navigation(clues):
+def prob04(clues):
     raise NotImplementedError

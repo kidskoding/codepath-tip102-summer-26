@@ -1,2 +1,2 @@
-def find_cruise_length(cruise_lengths, vacation_length):
+def prob01(cruise_lengths, vacation_length):
     raise NotImplementedError

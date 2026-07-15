@@ -1,5 +1,5 @@
 import pytest
-from prob03 import reverse_scroll
+from prob03 import prob03
 
 
 @pytest.mark.parametrize("scroll, expected", [
@@ -9,4 +9,4 @@ from prob03 import reverse_scroll
     ("a", "a"),          # edge: single character
 ])
 def test_prob03(scroll, expected):
-    assert reverse_scroll(scroll) == expected
+    assert prob03(scroll) == expected

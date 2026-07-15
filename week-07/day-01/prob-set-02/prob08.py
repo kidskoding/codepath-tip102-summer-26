@@ -1,5 +1,5 @@
 from references import Node
 
 
-def weave_spells(spell_a, spell_b):
+def prob08(spell_a, spell_b):
     raise NotImplementedError

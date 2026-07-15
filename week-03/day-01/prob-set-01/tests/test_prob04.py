@@ -1,5 +1,5 @@
 import pytest
-from prob04 import engagement_boost
+from prob04 import prob04
 
 @pytest.mark.parametrize("nums, expected", [
     ([-4, -1, 0, 3, 10], [0, 1, 9, 16, 100]),
@@ -9,4 +9,4 @@ from prob04 import engagement_boost
     ([-3], [9]),     # single negative
 ])
 def test_prob04(nums, expected):
-    assert engagement_boost(nums) == expected
+    assert prob04(nums) == expected

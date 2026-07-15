@@ -1,5 +1,5 @@
 import pytest
-from prob05 import content_cleaner
+from prob05 import prob05
 
 @pytest.mark.parametrize("post, expected", [
     ("poOost", "post"),
@@ -9,4 +9,4 @@ from prob05 import content_cleaner
     ("abc", "abc"),    # no removable pairs, unchanged
 ])
 def test_prob05(post, expected):
-    assert content_cleaner(post) == expected
+    assert prob05(post) == expected

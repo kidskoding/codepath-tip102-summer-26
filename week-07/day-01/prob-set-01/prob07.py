@@ -1,2 +1,2 @@
-def count_deposits(resources):
+def prob07(resources):
     raise NotImplementedError

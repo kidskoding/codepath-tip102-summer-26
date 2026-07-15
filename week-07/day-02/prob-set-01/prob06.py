@@ -1,2 +1,2 @@
-def find_treasure(matrix, treasure):
+def prob06(matrix, treasure):
     raise NotImplementedError

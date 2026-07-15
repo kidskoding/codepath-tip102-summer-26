@@ -1,5 +1,5 @@
 import pytest
-from prob04 import get_items
+from prob04 import prob04
 
 @pytest.mark.parametrize("items, index, expected", [
     (["piglet", "pooh", "roo", "rabbit"], 0, "piglet"),
@@ -11,4 +11,4 @@ from prob04 import get_items
     (["piglet", "pooh", "roo", "rabbit"], 4, None),
 ])
 def test_prob04(items, index, expected):
-    assert get_items(items, index) == expected
+    assert prob04(items, index) == expected

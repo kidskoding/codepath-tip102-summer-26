@@ -1,6 +1,6 @@
 import pytest
 from references import TreeNode
-from prob02 import calculate_yield
+from prob02 import prob02
 
 
 @pytest.mark.parametrize("root, expected", [
@@ -9,4 +9,4 @@ from prob02 import calculate_yield
     (TreeNode("-", TreeNode(7), TreeNode(5)), 2),   # edge: subtract
 ])
 def test_prob02(root, expected):
-    assert calculate_yield(root) == expected
+    assert prob02(root) == expected

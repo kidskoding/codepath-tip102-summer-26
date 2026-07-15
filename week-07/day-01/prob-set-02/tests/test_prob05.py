@@ -1,5 +1,5 @@
 import pytest
-from prob05 import double_power
+from prob05 import prob05
 
 
 @pytest.mark.parametrize("initial_power, n, expected", [
@@ -9,4 +9,4 @@ from prob05 import double_power
     (1, 4, 16),  # edge: 1 -> 2 -> 4 -> 8 -> 16
 ])
 def test_prob05(initial_power, n, expected):
-    assert double_power(initial_power, n) == expected
+    assert prob05(initial_power, n) == expected

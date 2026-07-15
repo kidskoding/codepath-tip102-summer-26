@@ -15,7 +15,7 @@
 
 from collections import deque
 
-def process_performance_requests(requests: list[str]) -> list[str]:
+def prob02(requests: list[str]) -> list[str]:
     requests = sorted(requests)
     queue = deque(requests)
     res = []

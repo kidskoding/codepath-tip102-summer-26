@@ -1,2 +1,2 @@
-def double_power(initial_power, n):
+def prob05(initial_power, n):
     raise NotImplementedError

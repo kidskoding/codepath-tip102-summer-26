@@ -1,5 +1,5 @@
 import pytest
-from prob03 import collect_festival_points
+from prob03 import prob03
 
 
 @pytest.mark.parametrize("points, expected", [
@@ -10,4 +10,4 @@ from prob03 import collect_festival_points
     ([7], 7),
 ])
 def test_prob03(points, expected):
-    assert collect_festival_points(points) == expected
+    assert prob03(points) == expected

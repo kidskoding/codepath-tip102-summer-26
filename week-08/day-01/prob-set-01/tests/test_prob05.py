@@ -1,6 +1,6 @@
 import pytest
 from references import TreeNode
-from prob05 import count_leaves
+from prob05 import prob05
 
 oak1 = TreeNode("Root",
                 TreeNode("Node1", TreeNode("Leaf1")),
@@ -15,4 +15,4 @@ oak2 = TreeNode("Root", TreeNode("Node1", TreeNode("Leaf1")))
     (None, 0),           # edge: empty tree
 ])
 def test_prob05(root, expected):
-    assert count_leaves(root) == expected
+    assert prob05(root) == expected

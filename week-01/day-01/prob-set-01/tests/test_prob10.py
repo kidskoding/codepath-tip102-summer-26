@@ -1,5 +1,5 @@
 import pytest
-from prob10 import split_haycorns
+from prob10 import prob10
 
 @pytest.mark.parametrize("n, expected", [
     (6, [1, 2, 3, 6]),
@@ -9,4 +9,4 @@ from prob10 import split_haycorns
     (4, [1, 2, 4]),
 ])
 def test_prob10(n, expected):
-    assert split_haycorns(n) == expected
+    assert prob10(n) == expected

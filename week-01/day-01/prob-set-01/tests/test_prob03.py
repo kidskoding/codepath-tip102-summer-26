@@ -1,5 +1,5 @@
 import pytest
-from prob03 import print_catchphrase
+from prob03 import prob03
 
 @pytest.mark.parametrize("name, expected", [
     ("Pooh", "Oh bother!"),
@@ -11,4 +11,4 @@ from prob03 import print_catchphrase
     ("pooh", "Sorry! I don't know pooh's catchphrase!"),
 ])
 def test_prob03(name, expected):
-    assert print_catchphrase(name) == expected
+    assert prob03(name) == expected

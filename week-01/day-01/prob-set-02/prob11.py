@@ -1,2 +1,2 @@
-def running_sum(superhero_stats):
+def prob11(superhero_stats):
     raise NotImplementedError

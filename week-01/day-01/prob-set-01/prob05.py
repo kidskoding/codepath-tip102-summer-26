@@ -1,4 +1,4 @@
-def sum_honey(hunny_jars: list[int]) -> int:
+def prob05(hunny_jars: list[int]) -> int:
     # 1. Create another integer variable called sum
     # 2. Loop through your items list
         # 2.1. Update the sum variable to the current sum plus the current item in the list

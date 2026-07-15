@@ -1,2 +1,2 @@
-def nanana_batman(x):
+def prob07(x):
     raise NotImplementedError

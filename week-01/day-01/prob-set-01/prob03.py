@@ -1,4 +1,4 @@
-def print_catchphrase(character: str) -> str:
+def prob03(character: str) -> str:
     # 1. Store the valid catchphrases
     # 2. Check if the character string has a valid catchphrase
     #   2.1. If so , simply return the catchphrase

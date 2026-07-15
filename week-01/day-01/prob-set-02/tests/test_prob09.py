@@ -1,5 +1,5 @@
 import pytest
-from prob09 import get_odds
+from prob09 import prob09
 
 @pytest.mark.parametrize("arg, expected", [
     ([1, 2, 3, 4], [1, 3]),
@@ -8,4 +8,4 @@ from prob09 import get_odds
     ([1, 3, 5], [1, 3, 5]),
 ])
 def test_prob09(arg, expected):
-    assert get_odds(arg) == expected
+    assert prob09(arg) == expected

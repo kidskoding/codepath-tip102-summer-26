@@ -1,2 +1,2 @@
-def validate_nft_actions(actions: list[str]) -> bool:
+def prob07(actions: list[str]) -> bool:
     raise NotImplementedError

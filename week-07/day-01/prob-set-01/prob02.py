@@ -1,2 +1,2 @@
-def sum_stones(stones):
+def prob02(stones):
     raise NotImplementedError

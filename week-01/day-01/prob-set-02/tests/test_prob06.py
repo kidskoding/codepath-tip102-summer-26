@@ -1,5 +1,5 @@
 import pytest
-from prob06 import squared
+from prob06 import prob06
 
 @pytest.mark.parametrize("arg, expected", [
     ([1, 2, 3], [1, 4, 9]),
@@ -8,4 +8,4 @@ from prob06 import squared
     ([-3], [9]),
 ])
 def test_prob06(arg, expected):
-    assert squared(arg) == expected
+    assert prob06(arg) == expected

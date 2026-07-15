@@ -1,2 +1,2 @@
-def reverse_scroll(scroll):
+def prob03(scroll):
     raise NotImplementedError

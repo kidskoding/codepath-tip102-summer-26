@@ -1,5 +1,5 @@
 import pytest
-from prob05 import concatenate
+from prob05 import prob05
 
 @pytest.mark.parametrize("arg, expected", [
     (["vengeance", "darkness", "batman"], "vengeancedarknessbatman"),
@@ -7,4 +7,4 @@ from prob05 import concatenate
     (["batman"], "batman"),  # edge: single element -> itself
 ])
 def test_prob05(arg, expected):
-    assert concatenate(arg) == expected
+    assert prob05(arg) == expected

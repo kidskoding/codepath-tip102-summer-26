@@ -1,2 +1,2 @@
-def extract_nft_names(nft_collection):
+def prob01(nft_collection):
     raise NotImplementedError

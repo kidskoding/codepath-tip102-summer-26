@@ -1,5 +1,5 @@
 import pytest
-from prob06 import process_nft_queue
+from prob06 import prob06
 
 
 @pytest.mark.parametrize("queue, expected", [
@@ -19,4 +19,4 @@ from prob06 import process_nft_queue
     ([{"name": "Solo", "processing_time": 1}], ['Solo']),
 ])
 def test_prob06(queue, expected):
-    assert process_nft_queue(queue) == expected
+    assert prob06(queue) == expected

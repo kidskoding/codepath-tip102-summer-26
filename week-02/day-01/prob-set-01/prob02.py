@@ -5,7 +5,7 @@
 # Time: O(1)
 # Space: O(1)
     
-def get_artist_info(artist: str, festival_schedule: dict[str, dict[str, str]]) -> dict[str, str]:
+def prob02(artist: str, festival_schedule: dict[str, dict[str, str]]) -> dict[str, str]:
     if artist in festival_schedule:
         return festival_schedule[artist]
     else:

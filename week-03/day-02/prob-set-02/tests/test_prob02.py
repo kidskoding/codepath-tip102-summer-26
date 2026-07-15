@@ -1,5 +1,5 @@
 import pytest
-from prob02 import process_performance_requests
+from prob02 import prob02
 
 
 @pytest.mark.parametrize("requests, expected", [
@@ -10,4 +10,4 @@ from prob02 import process_performance_requests
     ([(5, 'Solo')], ['Solo']),
 ])
 def test_prob02(requests, expected):
-    assert process_performance_requests(requests) == expected
+    assert prob02(requests) == expected

@@ -1,2 +1,2 @@
-def fibonacci_growth(n):
+def prob04(n):
     raise NotImplementedError

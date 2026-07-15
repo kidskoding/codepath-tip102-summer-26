@@ -1,2 +1,2 @@
-def can_pair(item_quantities):
+def prob09(item_quantities):
     raise NotImplementedError

@@ -1,6 +1,6 @@
 import pytest
 from references import TreeNode
-from prob04 import right_vine
+from prob04 import prob04
 
 ivy1 = TreeNode("Root",
                 TreeNode("Node1", TreeNode("Leaf1")),
@@ -14,4 +14,4 @@ ivy2 = TreeNode("Root", TreeNode("Node1", TreeNode("Leaf1")))
     (TreeNode("A"), ["A"]),               # edge: single node
 ])
 def test_prob04(root, expected):
-    assert right_vine(root) == expected
+    assert prob04(root) == expected

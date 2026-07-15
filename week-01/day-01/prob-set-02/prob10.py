@@ -1,2 +1,2 @@
-def up_and_down(lst):
+def prob10(lst):
     raise NotImplementedError

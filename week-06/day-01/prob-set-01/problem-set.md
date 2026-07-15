@@ -70,7 +70,7 @@ def print_linked_list(node):
 ### Function Signature
 
 ```python
-def get_artist_frequency(playlist):
+def prob02(playlist):
     pass
 ```
 
@@ -84,7 +84,7 @@ playlist = SongNode("Saturn", "SZA",
                         SongNode("Espresso", "Sabrina Carpenter",
                                 SongNode("Snooze", "SZA"))))
 
-get_artist_frequency(playlist)
+prob02(playlist)
 
 Output: { "SZA": 2, "Jimin": 1, "Sabrina Carpenter": 1 }
 ```
@@ -182,7 +182,7 @@ class SongNode:
 ### Function Signature
 
 ```python
-def on_repeat(playlist_head):
+def prob04(playlist_head):
     pass
 ```
 
@@ -202,7 +202,7 @@ song2.next = song3
 song3.next = song4
 song4.next = song2
 
-print(on_repeat(song1))
+print(prob04(song1))
 
 Output: True
 ```
@@ -240,7 +240,7 @@ def print_linked_list(node):
 ### Function Signature
 
 ```python
-def loop_length(playlist_head):
+def prob05(playlist_head):
     pass
 ```
 
@@ -260,7 +260,7 @@ song2.next = song3
 song3.next = song4
 song4.next = song2
 
-print(loop_length(song1))
+print(prob05(song1))
 
 Output: 3
 ```
@@ -301,7 +301,7 @@ def print_linked_list(head):
 ### Function Signature
 
 ```python
-def count_critical_points(song_audio):
+def prob06(song_audio):
     pass
 ```
 
@@ -312,7 +312,7 @@ def count_critical_points(song_audio):
 Input:
 song_audio = Node(5, Node(3, Node(1, Node(2, Node(5, Node(1, Node(2)))))))
 
-print(count_critical_points(song_audio))
+print(prob06(song_audio))
 
 Output: 3
 ```

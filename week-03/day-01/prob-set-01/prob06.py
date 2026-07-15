@@ -1,2 +1,2 @@
-def post_editor(post: str) -> str:
+def prob06(post: str) -> str:
     raise NotImplementedError

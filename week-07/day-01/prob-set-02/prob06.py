@@ -1,2 +1,2 @@
-def is_increasing_path(path):
+def prob06(path):
     raise NotImplementedError

@@ -1,5 +1,5 @@
 import pytest
-from prob07 import sort_performances_by_type
+from prob07 import prob07
 
 
 @pytest.mark.parametrize("nums, expected", [
@@ -11,4 +11,4 @@ from prob07 import sort_performances_by_type
     ([1], [1]),
 ])
 def test_prob07(nums, expected):
-    assert sort_performances_by_type(nums) == expected
+    assert prob07(nums) == expected

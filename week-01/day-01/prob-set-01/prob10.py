@@ -1,2 +1,2 @@
-def split_haycorns(quantity):
+def prob10(quantity):
     raise NotImplementedError

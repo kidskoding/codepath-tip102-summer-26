@@ -188,12 +188,12 @@ Output: Inventory empty
 
 ### Description
 
-Given a list `race_results` of `Player` objects where position in the list corresponds to finishing place, write a function `print_results()` that prints each player's place and character name.
+Given a list `race_results` of `Player` objects where position in the list corresponds to finishing place, write a function `prob07()` that prints each player's place and character name.
 
 ### Function Signature
 
 ```python
-def print_results(race_results):
+def prob07(race_results):
     pass
 ```
 
@@ -204,7 +204,7 @@ def print_results(race_results):
 Input:  peach = Player("Peach", "Daytripper")
         mario = Player("Mario", "Standard Kart M")
         luigi = Player("Luigi", "Super Blooper")
-        print_results([peach, mario, luigi])
+        prob07([peach, mario, luigi])
 Output:
 1. Peach
 2. Mario
@@ -219,7 +219,7 @@ Output:
 
 The `Player` class has been updated with an `ahead` attribute representing the player directly ahead in the race (another `Player` instance, defaulting to `None`).
 
-Write a function `get_rank()` that accepts a `Player` object `my_player` and returns their current place number in the race.
+Write a function `prob08()` that accepts a `Player` object `my_player` and returns their current place number in the race.
 
 ```python
 class Player:
@@ -233,7 +233,7 @@ class Player:
 ### Function Signature
 
 ```python
-def get_rank(my_player):
+def prob08(my_player):
     pass
 ```
 
@@ -244,19 +244,19 @@ def get_rank(my_player):
 Input:  peach = Player("Peach", "Daytripper")
         mario = Player("Mario", "Standard Kart M", peach)
         luigi = Player("Luigi", "Super Blooper", mario)
-        get_rank(luigi)
+        prob08(luigi)
 Output: 3
 ```
 
 **Example 2:**
 ```
-Input:  get_rank(peach)
+Input:  prob08(peach)
 Output: 1
 ```
 
 **Example 3:**
 ```
-Input:  get_rank(mario)
+Input:  prob08(mario)
 Output: 2
 ```
 
@@ -336,12 +336,12 @@ Output: cat -> mouse -> cheese
 
 ### Description
 
-Write a function `chase_list()` that takes the head of a linked list and returns a string of all node values joined by `" chases "`.
+Write a function `prob12()` that takes the head of a linked list and returns a string of all node values joined by `" chases "`.
 
 ### Function Signature
 
 ```python
-def chase_list(head):
+def prob12(head):
     pass
 ```
 

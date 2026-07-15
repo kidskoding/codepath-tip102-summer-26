@@ -1,2 +1,2 @@
-def is_palindrome(name):
+def prob04(name):
     raise NotImplementedError

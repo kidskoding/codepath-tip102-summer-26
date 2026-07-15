@@ -8,12 +8,12 @@
 
 ### Description
 
-Write a function `batman()` that prints the string `"I am vengeance. I am the night. I am Batman!"`.
+Write a function `prob01()` that prints the string `"I am vengeance. I am the night. I am Batman!"`.
 
 ### Function Signature
 
 ```python
-def batman():
+def prob01():
     pass
 ```
 
@@ -21,7 +21,7 @@ def batman():
 
 **Example 1:**
 ```
-Input:  batman()
+Input:  prob01()
 Output: I am vengeance. I am the night. I am Batman!
 ```
 
@@ -33,12 +33,12 @@ Output: I am vengeance. I am the night. I am Batman!
 
 ### Description
 
-Write a function `madlib()` that accepts one parameter, a string `verb`. The function should print the sentence: `"I have one power. I never <verb>. - Batman"`.
+Write a function `prob02()` that accepts one parameter, a string `verb`. The function should print the sentence: `"I have one power. I never <verb>. - Batman"`.
 
 ### Function Signature
 
 ```python
-def madlib(verb):
+def prob02(verb):
     pass
 ```
 
@@ -46,13 +46,13 @@ def madlib(verb):
 
 **Example 1:**
 ```
-Input:  madlib("give up")
+Input:  prob02("give up")
 Output: I have one power. I never give up. - Batman
 ```
 
 **Example 2:**
 ```
-Input:  madlib("nap")
+Input:  prob02("nap")
 Output: I have one power. I never nap. - Batman
 ```
 
@@ -64,7 +64,7 @@ Output: I have one power. I never nap. - Batman
 
 ### Description
 
-Write a function `trilogy()` that accepts an integer `year` and prints the title of the Batman trilogy movie released that year as outlined below.
+Write a function `prob03()` that accepts an integer `year` and prints the title of the Batman prob03 movie released that year as outlined below.
 
 | Year | Movie Title |
 | --- | --- |
@@ -77,7 +77,7 @@ If the given year does not match one of the years above, print `"Christopher Nol
 ### Function Signature
 
 ```python
-def trilogy(year):
+def prob03(year):
     pass
 ```
 
@@ -85,13 +85,13 @@ def trilogy(year):
 
 **Example 1:**
 ```
-Input:  trilogy(2008)
+Input:  prob03(2008)
 Output: The Dark Knight
 ```
 
 **Example 2:**
 ```
-Input:  trilogy(1998)
+Input:  prob03(1998)
 Output: Christopher Nolan did not release a Batman movie in 1998.
 ```
 
@@ -103,12 +103,12 @@ Output: Christopher Nolan did not release a Batman movie in 1998.
 
 ### Description
 
-Implement a function `get_last()` that accepts a list of items `items` and returns the last item in the list. If the list is empty, return `None`.
+Implement a function `prob04()` that accepts a list of items `items` and returns the last item in the list. If the list is empty, return `None`.
 
 ### Function Signature
 
 ```python
-def get_last(items):
+def prob04(items):
     pass
 ```
 
@@ -116,7 +116,7 @@ def get_last(items):
 
 **Example 1:**
 ```
-Input:  items = ["spider man", "batman", "superman", "iron man", "wonder woman", "black adam"]
+Input:  items = ["spider man", "prob01", "superman", "iron man", "wonder woman", "black adam"]
 Output: "black adam"
 ```
 
@@ -134,12 +134,12 @@ Output: None
 
 ### Description
 
-Write a function `concatenate()` that takes in a list of strings `words` and returns a string `concatenated` that concatenates all elements in `words`.
+Write a function `prob05()` that takes in a list of strings `words` and returns a string `concatenated` that concatenates all elements in `words`.
 
 ### Function Signature
 
 ```python
-def concatenate(words):
+def prob05(words):
     pass
 ```
 
@@ -147,7 +147,7 @@ def concatenate(words):
 
 **Example 1:**
 ```
-Input:  words = ["vengeance", "darkness", "batman"]
+Input:  words = ["vengeance", "darkness", "prob01"]
 Output: "vengeancedarknessbatman"
 ```
 
@@ -165,12 +165,12 @@ Output: ""
 
 ### Description
 
-Write a function `squared()` that accepts a list of integers `numbers` as a parameter and squares each item in the list. Return the squared list.
+Write a function `prob06()` that accepts a list of integers `numbers` as a parameter and squares each item in the list. Return the prob06 list.
 
 ### Function Signature
 
 ```python
-def squared(numbers):
+def prob06(numbers):
     pass
 ```
 
@@ -190,12 +190,12 @@ Output: [1, 4, 9]
 
 ### Description
 
-Write a function `nanana_batman()` that accepts an integer `x` and prints the string `"nanana batman!"` where `"na"` is repeated `x` times. Do not use the `*` operator.
+Write a function `prob07()` that accepts an integer `x` and prints the string `"nanana prob01!"` where `"na"` is repeated `x` times. Do not use the `*` operator.
 
 ### Function Signature
 
 ```python
-def nanana_batman(x):
+def prob07(x):
     pass
 ```
 
@@ -203,14 +203,14 @@ def nanana_batman(x):
 
 **Example 1:**
 ```
-Input:  nanana_batman(6)
-Output: nananananana batman!
+Input:  prob07(6)
+Output: nananananana prob01!
 ```
 
 **Example 2:**
 ```
-Input:  nanana_batman(0)
-Output: batman!
+Input:  prob07(0)
+Output: prob01!
 ```
 
 ---
@@ -221,12 +221,12 @@ Output: batman!
 
 ### Description
 
-Write a function `find_villain()` that accepts a list `crowd` and a value `villain` as parameters and returns a list of all indices where the villain is found hiding in the crowd.
+Write a function `prob08()` that accepts a list `crowd` and a value `villain` as parameters and returns a list of all indices where the villain is found hiding in the crowd.
 
 ### Function Signature
 
 ```python
-def find_villain(crowd, villain):
+def prob08(crowd, villain):
     pass
 ```
 
@@ -246,12 +246,12 @@ Output: [1, 4, 6]
 
 ### Description
 
-Write a function `get_odds()` that takes in a list of integers `nums` and returns a new list containing all the odd numbers in `nums`.
+Write a function `prob09()` that takes in a list of integers `nums` and returns a new list containing all the odd numbers in `nums`.
 
 ### Function Signature
 
 ```python
-def get_odds(nums):
+def prob09(nums):
     pass
 ```
 
@@ -277,12 +277,12 @@ Output: []
 
 ### Description
 
-Write a function `up_and_down()` that accepts a list of integers `lst` as a parameter. The function should return the number of odd numbers minus the number of even numbers in the list.
+Write a function `prob10()` that accepts a list of integers `lst` as a parameter. The function should return the number of odd numbers minus the number of even numbers in the list.
 
 ### Function Signature
 
 ```python
-def up_and_down(lst):
+def prob10(lst):
     pass
 ```
 
@@ -314,12 +314,12 @@ Output: -4
 
 ### Description
 
-Write a function `running_sum()` that accepts a list of integers `superhero_stats` representing the number of crimes Batman has stopped each month in Gotham City. The function should modify the list to return the running sum such that `superhero_stats[i] = sum(superhero_stats[0]...superhero_stats[i])`. You must modify the list in place; you may not create any new lists as part of your solution.
+Write a function `prob11()` that accepts a list of integers `superhero_stats` representing the number of crimes Batman has stopped each month in Gotham City. The function should modify the list to return the running sum such that `superhero_stats[i] = sum(superhero_stats[0]...superhero_stats[i])`. You must modify the list in place; you may not create any new lists as part of your solution.
 
 ### Function Signature
 
 ```python
-def running_sum(superhero_stats):
+def prob11(superhero_stats):
     pass
 ```
 
@@ -351,12 +351,12 @@ Output: [3, 4, 6, 16, 17]
 
 ### Description
 
-Write a function `shuffle()` that accepts a list `cards` of `2n` elements in the form `[x1,x2,...,xn,y1,y2,...,yn]`. Return the list in the form `[x1,y1,x2,y2,...,xn,yn]`.
+Write a function `prob12()` that accepts a list `cards` of `2n` elements in the form `[x1,x2,...,xn,y1,y2,...,yn]`. Return the list in the form `[x1,y1,x2,y2,...,xn,yn]`.
 
 ### Function Signature
 
 ```python
-def shuffle(cards):
+def prob12(cards):
     pass
 ```
 

@@ -1,6 +1,6 @@
 from collections import deque
 
-def process_nft_queue(nft_queue: list[dict[str, object]]) -> list[str]:
+def prob06(nft_queue: list[dict[str, object]]) -> list[str]:
     if not nft_queue:
         return []
 

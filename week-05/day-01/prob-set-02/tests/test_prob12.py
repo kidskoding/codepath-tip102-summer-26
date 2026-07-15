@@ -1,7 +1,7 @@
 import pytest
 
 from references import Node
-from prob12 import chase_list
+from prob12 import prob12
 
 
 def build(values):
@@ -17,4 +17,4 @@ def build(values):
     (["Tom", "Jerry"], "Tom chases Jerry"),    # two nodes
 ])
 def test_prob12(values, expected):
-    assert chase_list(build(values)) == expected
+    assert prob12(build(values)) == expected

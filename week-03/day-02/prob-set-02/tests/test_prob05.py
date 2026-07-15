@@ -1,5 +1,5 @@
 import pytest
-from prob05 import merge_schedules
+from prob05 import prob05
 
 
 @pytest.mark.parametrize("a, b, expected", [
@@ -11,4 +11,4 @@ from prob05 import merge_schedules
     ("", "xyz", "xyz"),
 ])
 def test_prob05(a, b, expected):
-    assert merge_schedules(a, b) == expected
+    assert prob05(a, b) == expected

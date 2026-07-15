@@ -1,2 +1,2 @@
-def get_last(items):
+def prob04(items):
     raise NotImplementedError

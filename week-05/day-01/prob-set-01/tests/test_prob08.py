@@ -1,6 +1,6 @@
 import pytest
 from references import Villager
-from prob08 import message_received
+from prob08 import prob08
 
 kk_slider = Villager("K.K. Slider", "Dog", "Normal", "ba ba")
 tom_nook = Villager("Tom Nook", "Raccoon", "Cranky", "yes yes", kk_slider)
@@ -15,4 +15,4 @@ rover = Villager("Rover", "Cat", "Normal", "meow")
     (isabelle, rover, False),     # target not in the chain -> unreachable
 ])
 def test_prob08(start, target, expected):
-    assert message_received(start, target) == expected
+    assert prob08(start, target) == expected

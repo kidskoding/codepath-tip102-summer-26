@@ -1,5 +1,5 @@
 import pytest
-from prob03 import count_checked_in_passengers
+from prob03 import prob03
 
 
 @pytest.mark.parametrize("rooms, expected", [
@@ -11,4 +11,4 @@ from prob03 import count_checked_in_passengers
     ([1], 1),                     # single one
 ])
 def test_prob03(rooms, expected):
-    assert count_checked_in_passengers(rooms) == expected
+    assert prob03(rooms) == expected

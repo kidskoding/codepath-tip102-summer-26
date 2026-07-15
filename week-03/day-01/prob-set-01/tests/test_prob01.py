@@ -1,5 +1,5 @@
 import pytest
-from prob01 import is_valid_post_format
+from prob01 import prob01
 
 @pytest.mark.parametrize("s, expected", [
     ("()", True),
@@ -11,4 +11,4 @@ from prob01 import is_valid_post_format
     ("([)]", False),   # wrong closing order
 ])
 def test_prob01(s, expected):
-    assert is_valid_post_format(s) == expected
+    assert prob01(s) == expected

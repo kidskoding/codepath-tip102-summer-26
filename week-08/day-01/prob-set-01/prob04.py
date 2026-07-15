@@ -1,2 +1,2 @@
-def right_vine(root):
+def prob04(root):
     raise NotImplementedError

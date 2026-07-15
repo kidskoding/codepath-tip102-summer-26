@@ -1,5 +1,5 @@
 import pytest
-from prob12 import shuffle
+from prob12 import prob12
 
 @pytest.mark.parametrize("arg, expected", [
     (['Joker', 'Queen', 2, 3, 'Ace', 7], ['Joker', 3, 'Queen', 'Ace', 2, 7]),
@@ -8,4 +8,4 @@ from prob12 import shuffle
     (['x', 'y'], ['x', 'y']),  # edge: smallest case n=1 (2 elements) -> unchanged
 ])
 def test_prob12(arg, expected):
-    assert shuffle(arg) == expected
+    assert prob12(arg) == expected

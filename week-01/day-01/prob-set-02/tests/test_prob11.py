@@ -1,5 +1,5 @@
 import pytest
-from prob11 import running_sum
+from prob11 import prob11
 
 @pytest.mark.parametrize("arg, expected", [
     ([1, 2, 3, 4], [1, 3, 6, 10]),
@@ -9,4 +9,4 @@ from prob11 import running_sum
     ([], []),
 ])
 def test_prob11(arg, expected):
-    assert running_sum(arg) == expected
+    assert prob11(arg) == expected

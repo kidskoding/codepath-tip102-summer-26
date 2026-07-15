@@ -1,2 +1,2 @@
-def batman():
+def prob01():
     raise NotImplementedError

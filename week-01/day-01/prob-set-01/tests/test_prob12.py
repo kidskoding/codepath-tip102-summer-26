@@ -1,5 +1,5 @@
 import pytest
-from prob12 import locate_thistles
+from prob12 import prob12
 
 @pytest.mark.parametrize("items, expected", [
     (["thistle", "stick", "carrot", "thistle", "eeyore's tail"], [0, 3]),
@@ -9,4 +9,4 @@ from prob12 import locate_thistles
     (["thistle"], [0]),
 ])
 def test_prob12(items, expected):
-    assert locate_thistles(items) == expected
+    assert prob12(items) == expected

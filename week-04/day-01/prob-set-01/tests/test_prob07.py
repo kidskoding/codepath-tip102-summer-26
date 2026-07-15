@@ -1,5 +1,5 @@
 import pytest
-from prob07 import validate_nft_actions
+from prob07 import prob07
 
 
 @pytest.mark.parametrize("actions, expected", [
@@ -15,4 +15,4 @@ from prob07 import validate_nft_actions
     ([], True),
 ])
 def test_prob07(actions, expected):
-    assert validate_nft_actions(actions) == expected
+    assert prob07(actions) == expected

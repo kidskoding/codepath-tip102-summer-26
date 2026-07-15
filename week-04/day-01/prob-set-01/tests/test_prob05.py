@@ -1,5 +1,5 @@
 import pytest
-from prob05 import search_nft_by_tag
+from prob05 import prob05
 
 
 @pytest.mark.parametrize("collections, tag, expected", [
@@ -19,4 +19,4 @@ from prob05 import search_nft_by_tag
     ([], "landscape", []),  # edge: no collections at all
 ])
 def test_prob05(collections, tag, expected):
-    assert search_nft_by_tag(collections, tag) == expected
+    assert prob05(collections, tag) == expected

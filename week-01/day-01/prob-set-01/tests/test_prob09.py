@@ -1,5 +1,5 @@
 import pytest
-from prob09 import can_pair
+from prob09 import prob09
 
 @pytest.mark.parametrize("nums, expected", [
     ([2, 4, 6, 8], True),
@@ -11,4 +11,4 @@ from prob09 import can_pair
     ([0], True),
 ])
 def test_prob09(nums, expected):
-    assert can_pair(nums) == expected
+    assert prob09(nums) == expected

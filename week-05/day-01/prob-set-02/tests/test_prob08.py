@@ -1,7 +1,7 @@
 import pytest
 
 from references import Player
-from prob08 import get_rank
+from prob08 import prob08
 
 
 def make_players():
@@ -23,4 +23,4 @@ def make_players():
     ("toad", 4),   # extend the chain by one -> 4th place
 ])
 def test_prob08(key, expected):
-    assert get_rank(make_players()[key]) == expected
+    assert prob08(make_players()[key]) == expected

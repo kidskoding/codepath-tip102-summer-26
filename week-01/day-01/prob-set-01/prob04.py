@@ -1,4 +1,4 @@
-def get_items(items: list[str], x: int) -> str | None:
+def prob04(items: list[str], x: int) -> str | None:
     # 1. Loop through your items list
     # 2. If the index is found (equal to x), simply return that element/item
     # 3. If the index is not found, return None

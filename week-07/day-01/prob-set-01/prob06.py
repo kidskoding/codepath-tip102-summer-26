@@ -1,2 +1,2 @@
-def strongest_avenger(strengths):
+def prob06(strengths):
     raise NotImplementedError

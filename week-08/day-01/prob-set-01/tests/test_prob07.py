@@ -1,6 +1,6 @@
 import pytest
 from references import TreeNode
-from prob07 import harvest_berries
+from prob07 import prob07
 
 bush = TreeNode(4,
                 TreeNode(10, TreeNode(5), TreeNode(8)),
@@ -14,4 +14,4 @@ bush = TreeNode(4,
     (None, 5, 0),    # edge: empty tree
 ])
 def test_prob07(root, threshold, expected):
-    assert harvest_berries(root, threshold) == expected
+    assert prob07(root, threshold) == expected

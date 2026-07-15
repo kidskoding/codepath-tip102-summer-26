@@ -1,2 +1,2 @@
-def power_of_four(n):
+def prob05(n):
     raise NotImplementedError

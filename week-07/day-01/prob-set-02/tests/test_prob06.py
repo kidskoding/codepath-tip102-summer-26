@@ -1,5 +1,5 @@
 import pytest
-from prob06 import is_increasing_path
+from prob06 import prob06
 
 
 @pytest.mark.parametrize("path, expected", [
@@ -9,4 +9,4 @@ from prob06 import is_increasing_path
     ([1, 1], False),           # edge: equal neighbors are not STRICTLY increasing
 ])
 def test_prob06(path, expected):
-    assert is_increasing_path(path) == expected
+    assert prob06(path) == expected

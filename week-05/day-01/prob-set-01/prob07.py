@@ -1,2 +1,2 @@
-def of_personality_type(townies, personality_type):
+def prob07(townies, personality_type):
     raise NotImplementedError

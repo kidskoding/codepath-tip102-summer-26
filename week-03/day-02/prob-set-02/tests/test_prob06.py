@@ -1,5 +1,5 @@
 import pytest
-from prob06 import next_greater_event
+from prob06 import prob06
 
 
 @pytest.mark.parametrize("nums1, nums2, expected", [
@@ -9,4 +9,4 @@ from prob06 import next_greater_event
     ([2], [1, 2], [-1]),
 ])
 def test_prob06(nums1, nums2, expected):
-    assert next_greater_event(nums1, nums2) == expected
+    assert prob06(nums1, nums2) == expected

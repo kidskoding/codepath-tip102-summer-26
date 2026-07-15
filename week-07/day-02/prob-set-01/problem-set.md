@@ -13,7 +13,7 @@ It's vacation time! Given an integer `vacation_length` and a list of integers `c
 ### Function Signature
 
 ```python
-def find_cruise_length(cruise_lengths, vacation_length):
+def prob01(cruise_lengths, vacation_length):
     pass
 ```
 
@@ -39,14 +39,14 @@ Output: False
 
 ### Description
 
-You have a list of available `cabins` sorted in ascending order by deck level. Given `cabins` and an integer `preferred_deck`, write a **recursive** function `find_cabin_index()` that returns the index of `preferred_deck`. If a cabin with `preferred_deck` does not exist, return the index where it would be inserted to keep `cabins` sorted.
+You have a list of available `cabins` sorted in ascending order by deck level. Given `cabins` and an integer `preferred_deck`, write a **recursive** function `prob02()` that returns the index of `preferred_deck`. If a cabin with `preferred_deck` does not exist, return the index where it would be inserted to keep `cabins` sorted.
 
 Your algorithm must run in O(log n) time.
 
 ### Function Signature
 
 ```python
-def find_cabin_index(cabins, preferred_deck):
+def prob02(cabins, preferred_deck):
     pass
 ```
 
@@ -78,12 +78,12 @@ Output: 4
 
 ### Description
 
-You are given a list of `rooms` where passengers are either checked in (`1`) or not checked in (`0`). The list is sorted, so all the `0`s appear before any `1`s. Write a function `count_checked_in_passengers()` that counts and returns the total number of checked-in passengers (`1`s) in O(log n) time.
+You are given a list of `rooms` where passengers are either checked in (`1`) or not checked in (`0`). The list is sorted, so all the `0`s appear before any `1`s. Write a function `prob03()` that counts and returns the total number of checked-in passengers (`1`s) in O(log n) time.
 
 ### Function Signature
 
 ```python
-def count_checked_in_passengers(rooms):
+def prob03(rooms):
     pass
 ```
 
@@ -122,7 +122,7 @@ Return the value of `x` if `excursion_counts` is profitable, otherwise return `-
 ### Function Signature
 
 ```python
-def is_profitable(excursion_counts):
+def prob04(excursion_counts):
     pass
 ```
 
@@ -150,12 +150,12 @@ Explanation: No `x` fits — for `x = 1` there should be 1 number `>= 1`, but th
 
 ### Description
 
-Given an array of integers `depths` representing water depths along a route, write a function `find_shallowest_point()` that uses a **divide-and-conquer** approach to return the shallowest point (minimum value) in `depths`. You may not use the built-in `min()` function.
+Given an array of integers `depths` representing water depths along a route, write a function `prob05()` that uses a **divide-and-conquer** approach to return the shallowest point (minimum value) in `depths`. You may not use the built-in `min()` function.
 
 ### Function Signature
 
 ```python
-def find_shallowest_point(depths):
+def prob05(depths):
     pass
 ```
 
@@ -186,7 +186,7 @@ A chest of candy is hidden in one of the rooms on board. The rooms are organized
 ### Function Signature
 
 ```python
-def find_treasure(matrix, treasure):
+def prob06(matrix, treasure):
     pass
 ```
 

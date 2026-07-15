@@ -1,5 +1,5 @@
 from references import Node
 
 
-def chase_list(head: Node | None):
+def prob12(head: Node | None):
     raise NotImplementedError

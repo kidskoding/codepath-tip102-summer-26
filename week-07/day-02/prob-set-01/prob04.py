@@ -1,2 +1,2 @@
-def is_profitable(excursion_counts):
+def prob04(excursion_counts):
     raise NotImplementedError

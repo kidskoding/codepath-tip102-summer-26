@@ -10,7 +10,7 @@
 # Time: O(n)
 # Space: O(n)
 
-def reverse_comments_queue(comments: list[str]) -> list[str]:
+def prob02(comments: list[str]) -> list[str]:
     stack = []
 
     for comment in comments:

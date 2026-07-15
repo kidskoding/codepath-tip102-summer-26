@@ -1,5 +1,5 @@
 import pytest
-from prob07 import longest_streak
+from prob07 import prob07
 
 
 @pytest.mark.parametrize("challenges, expected", [
@@ -10,4 +10,4 @@ from prob07 import longest_streak
     ("SSSS", 4),        # edge: all successes
 ])
 def test_prob07(challenges, expected):
-    assert longest_streak(challenges) == expected
+    assert prob07(challenges) == expected

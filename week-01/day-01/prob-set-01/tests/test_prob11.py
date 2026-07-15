@@ -1,5 +1,5 @@
 import pytest
-from prob11 import tiggerfy
+from prob11 import prob11
 
 @pytest.mark.parametrize("word, expected", [
     ("suspicerous", "suspcous"),
@@ -9,4 +9,4 @@ from prob11 import tiggerfy
     ("", ""),
 ])
 def test_prob11(word, expected):
-    assert tiggerfy(word) == expected
+    assert prob11(word) == expected

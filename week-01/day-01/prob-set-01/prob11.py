@@ -1,2 +1,2 @@
-def tiggerfy(s):
+def prob11(s):
     raise NotImplementedError

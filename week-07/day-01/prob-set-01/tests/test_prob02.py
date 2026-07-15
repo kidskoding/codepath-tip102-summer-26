@@ -1,5 +1,5 @@
 import pytest
-from prob02 import sum_stones
+from prob02 import prob02
 
 
 @pytest.mark.parametrize("stones, expected", [
@@ -9,4 +9,4 @@ from prob02 import sum_stones
     ([7], 7),                         # single
 ])
 def test_prob02(stones, expected):
-    assert sum_stones(stones) == expected
+    assert prob02(stones) == expected

@@ -1,5 +1,5 @@
 import pytest
-from prob01 import extract_nft_names
+from prob01 import prob01
 
 
 @pytest.mark.parametrize("collection, expected", [
@@ -15,4 +15,4 @@ from prob01 import extract_nft_names
     ([], []),  # edge: empty collection
 ])
 def test_prob01(collection, expected):
-    assert extract_nft_names(collection) == expected
+    assert prob01(collection) == expected

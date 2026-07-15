@@ -1,5 +1,5 @@
 import pytest
-from prob04 import average_nft_value
+from prob04 import prob04
 
 
 @pytest.mark.parametrize("collection, expected", [
@@ -15,4 +15,4 @@ from prob04 import average_nft_value
     ([{"name": "Solo", "creator": "X", "value": 4.0}], 4.0),
 ])
 def test_prob04(collection, expected):
-    assert average_nft_value(collection) == expected
+    assert prob04(collection) == expected

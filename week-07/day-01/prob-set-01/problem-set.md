@@ -41,7 +41,7 @@ Thanos is collecting Infinity Stones. Given an array of integers `stones` repres
 ### Function Signature
 
 ```python
-def sum_stones(stones):
+def prob02(stones):
     pass
 ```
 
@@ -104,7 +104,7 @@ The Fibonacci numbers `F(n)` form a sequence where each number is the sum of the
 ### Function Signature
 
 ```python
-def fibonacci_growth(n):
+def prob04(n):
     pass
 ```
 
@@ -135,7 +135,7 @@ The Fantastic Four's power level is represented as a power of 4. Write a recursi
 ### Function Signature
 
 ```python
-def power_of_four(n):
+def prob05(n):
     pass
 ```
 
@@ -168,7 +168,7 @@ Given a list of the Avengers' `strengths`, find the maximum strength using a rec
 ### Function Signature
 
 ```python
-def strongest_avenger(strengths):
+def prob06(strengths):
     pass
 ```
 
@@ -194,12 +194,12 @@ Output: 90
 
 ### Description
 
-In Wakanda, vibranium deposits are represented by characters in a string (e.g. `"V"` for vibranium, `"G"` for gold). Given a string `resources`, write a recursive function `count_deposits()` that returns the total number of vibranium (`"V"`) deposits in `resources`.
+In Wakanda, vibranium deposits are represented by characters in a string (e.g. `"V"` for vibranium, `"G"` for gold). Given a string `resources`, write a recursive function `prob07()` that returns the total number of vibranium (`"V"`) deposits in `resources`.
 
 ### Function Signature
 
 ```python
-def count_deposits(resources):
+def prob07(resources):
     pass
 ```
 
@@ -226,7 +226,7 @@ Explanation: There are two `"V"` characters in `"VXVYGA"`.
 
 ### Description
 
-Each Avengers mission has a priority level represented as a node in a sorted linked list. Given the heads of two sorted linked lists `mission1` and `mission2`, implement a **recursive** function `merge_missions()` that merges them into one sorted list by splicing together the existing nodes. Return the head of the merged list.
+Each Avengers mission has a priority level represented as a node in a sorted linked list. Given the heads of two sorted linked lists `mission1` and `mission2`, implement a **recursive** function `prob08()` that merges them into one sorted list by splicing together the existing nodes. Return the head of the merged list.
 
 ### Function Signature
 
@@ -236,7 +236,7 @@ class Node:
         self.value = value
         self.next = next
 
-def merge_missions(mission1, mission2):
+def prob08(mission1, mission2):
     pass
 ```
 
@@ -255,6 +255,6 @@ Output: 1 -> 1 -> 2 -> 3 -> 4 -> 4
 
 _Discussion/comparison problem — no implementation._
 
-Compare your recursive `merge_missions()` from Problem 8 to the iterative solution provided in the source, and discuss which you prefer.
+Compare your recursive `prob08()` from Problem 8 to the iterative solution provided in the source, and discuss which you prefer.
 
 ---

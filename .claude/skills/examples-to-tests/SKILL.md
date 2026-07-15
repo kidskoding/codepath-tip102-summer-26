@@ -31,7 +31,7 @@ import and skip:
 # probNN.py
 from references import Node  # only if the signature uses Node
 
-def function_name(...):
+def probNN(...):
     raise NotImplementedError
 ```
 Then write `test_probNN.py` for it like any other. Result: a set with 6 problems
@@ -89,7 +89,7 @@ failure — don't use them for multiple cases):
 
 ```python
 import pytest
-from probNN import function_name
+from probNN import probNN
 
 @pytest.mark.parametrize("arg, expected", [
     (input1, expected1),   # example from problem-set.md
@@ -98,7 +98,7 @@ from probNN import function_name
     (single, expected_s),  # edge case
 ])
 def test_probNN(arg, expected):
-    assert function_name(arg) == expected
+    assert probNN(arg) == expected
 ```
 
 For a multi-arg signature, widen the param string and unpack:
@@ -107,11 +107,13 @@ For a multi-arg signature, widen the param string and unpack:
     (input_a, input_b, expected1),
 ])
 def test_probNN(a, b, expected):
-    assert function_name(a, b) == expected
+    assert probNN(a, b) == expected
 ```
 
 Rules:
-- Import the exact function name from the problem's signature.
+- Import `probNN` from `probNN` — the function is named after the problem number, not
+  whatever the problem text calls it (see `format-problem-set`). Exceptions: class-def
+  problems (methods keep their names) and two-function problems (both keep theirs).
 - One parametrize row per Input/Output example in `problem-set.md`, using the real values, not paraphrases — then add the edge-case rows below.
 - Test function is named `test_probNN` matching the file.
 - `parametrize` is the one pytest feature to use here (for per-case failure isolation). Still no other fixtures and no speculative test scaffolding.
@@ -143,7 +145,7 @@ When examples use a `Node`/linked list, the raw `print(func(...))` won't transla
 
 ```python
 from references import Node        # shared class, repo-root references package
-from prob04 import merge_timelines  # the solution under test
+from prob04 import prob04  # the solution under test
 
 def build(values):
     """list -> linked list, returns head"""
@@ -166,7 +168,7 @@ def to_list(head):
     ([],        [],        []),                   # both empty
 ])
 def test_prob04(a_vals, b_vals, expected):
-    assert to_list(merge_timelines(build(a_vals), build(b_vals))) == expected
+    assert to_list(prob04(build(a_vals), build(b_vals))) == expected
 ```
 
 - Pass plain lists in the parametrize rows and call `build()` inside the test

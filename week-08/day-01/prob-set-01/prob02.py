@@ -1,2 +1,2 @@
-def calculate_yield(root):
+def prob02(root):
     raise NotImplementedError

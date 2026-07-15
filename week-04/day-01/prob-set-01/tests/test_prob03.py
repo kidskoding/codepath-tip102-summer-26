@@ -1,5 +1,5 @@
 import pytest
-from prob03 import identify_popular_creators
+from prob03 import prob03
 
 
 @pytest.mark.parametrize("collection, expected", [
@@ -20,4 +20,4 @@ from prob03 import identify_popular_creators
      ['Zoe']),
 ])
 def test_prob03(collection, expected):
-    assert identify_popular_creators(collection) == expected
+    assert prob03(collection) == expected

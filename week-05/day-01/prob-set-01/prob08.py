@@ -1,2 +1,2 @@
-def message_received(start_villager, target_villager):
+def prob08(start_villager, target_villager):
     raise NotImplementedError

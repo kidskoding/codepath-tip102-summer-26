@@ -1,6 +1,6 @@
 import pytest
 from references import Node
-from prob08 import weave_spells
+from prob08 import prob08
 
 
 def build(values):
@@ -25,4 +25,4 @@ def to_list(head):
     ([], [], []),                                    # edge: both empty
 ])
 def test_prob08(a_vals, b_vals, expected):
-    assert to_list(weave_spells(build(a_vals), build(b_vals))) == expected
+    assert to_list(prob08(build(a_vals), build(b_vals))) == expected

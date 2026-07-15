@@ -1,5 +1,5 @@
 import pytest
-from prob04 import is_palindrome
+from prob04 import prob04
 
 
 @pytest.mark.parametrize("name, expected", [
@@ -11,4 +11,4 @@ from prob04 import is_palindrome
     ("abba", True),   # edge: even-length palindrome
 ])
 def test_prob04(name, expected):
-    assert is_palindrome(name) == expected
+    assert prob04(name) == expected

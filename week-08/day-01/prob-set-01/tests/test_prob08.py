@@ -1,6 +1,6 @@
 import pytest
 from references import TreeNode
-from prob08 import find_flower
+from prob08 import prob08
 
 field = TreeNode("Rose",
                  TreeNode("Lily", TreeNode("Orchid"), TreeNode("Lilac")),
@@ -14,4 +14,4 @@ field = TreeNode("Rose",
     (None, "Rose", False),       # edge: empty tree
 ])
 def test_prob08(root, flower, expected):
-    assert find_flower(root, flower) == expected
+    assert prob08(root, flower) == expected

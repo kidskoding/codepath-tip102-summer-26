@@ -1,2 +1,2 @@
-def get_odds(nums):
+def prob09(nums):
     raise NotImplementedError

@@ -1,5 +1,5 @@
 import pytest
-from prob10 import up_and_down
+from prob10 import prob10
 
 @pytest.mark.parametrize("arg, expected", [
     ([1, 2, 3], 1),
@@ -10,4 +10,4 @@ from prob10 import up_and_down
     ([8], -1),
 ])
 def test_prob10(arg, expected):
-    assert up_and_down(arg) == expected
+    assert prob10(arg) == expected

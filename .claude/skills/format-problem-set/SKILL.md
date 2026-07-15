@@ -59,9 +59,13 @@ Ask user if path is unclear.
 ### Function Signature
 
 ```python
-def function_name(param: type) -> return_type:
+def probNN(param: type) -> return_type:
     pass
 ```
+
+**Always name the function `probNN` (matching the problem number), even when the
+problem says "write a function `foo()`".** Keep the params and type hints exactly
+as given — only the name is overridden.
 
 ### Examples
 
@@ -104,7 +108,7 @@ unwritten solutions as **skipped** rather than failed:
 
 ```python
 # prob03.py
-def partition(suspect_ratings, threshold):
+def prob03(suspect_ratings, threshold):
     raise NotImplementedError
 ```
 
@@ -114,10 +118,15 @@ Rules for stubs:
   whether the file has real code, a `pass` stub, or is empty. Only create stubs for
   problem numbers with NO existing file.
 - One file per problem, `probNN` matching the `## Problem N` number.
-- **The FILE is always named `probNN.py` by problem number — ignore what the problem
-  calls the function.** "Write a function `welcome()`" → file `prob01.py`, NOT
-  `welcome.py`. The function name only lives inside the file as the signature.
-- Copy the signature EXACTLY as given (same name, params, type hints). Don't invent one.
+- **Both the FILE and the FUNCTION are named `probNN` by problem number — ignore what
+  the problem calls the function.** "Write a function `welcome(name)`" → file
+  `prob01.py` holding `def prob01(name):`. Not `welcome.py`, not `def welcome`.
+- Copy the params and type hints EXACTLY as given; only the function name is
+  overridden to `probNN`. Don't invent params.
+- **Two exceptions to the `probNN` name.** (1) Class-DEFINITION problems: methods keep
+  their given names (`def set_catchphrase(self, ...)`) — `probNN` names a module-level
+  function, not a method. (2) A problem asking for TWO functions (e.g. "write it
+  iteratively AND recursively") keeps both given names — they can't both be `probNN`.
 - **Skip debug/review problems** — if a problem has no function to implement (it's
   "find the bug" / "trace this code"), don't create a `probNN.py` for it (per CLAUDE.md).
 - **Shared classes go in the central repo-root `references/` package, NOT copied
@@ -167,7 +176,8 @@ explicitly said "no tests" / "just the markdown".
 3. **Normalize examples** — convert `print(func(args))` → `Output: result` format
 4. **One file, all problems** — don't split into separate files unless user asks
 5. **Infer difficulty** if not stated — Easy for direct lookups, Medium for two-pointer/stack, Hard for complex logic
-6. **Keep function signature** exactly as given — don't rename params or change types
+6. **Keep params and types** exactly as given — don't rename params or change types.
+   The function NAME is always `probNN`, whatever the problem calls it.
 7. **Starter code** — if a problem asks to "add comments to existing code", include the full code block under a `### Starter Code` section
 
 ## Common Mistakes

@@ -1,4 +1,4 @@
-def welcome() -> None:
+def prob01() -> None:
     # print to console
     
     # Time: O(1)

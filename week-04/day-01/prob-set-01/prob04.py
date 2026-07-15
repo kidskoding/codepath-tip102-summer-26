@@ -1,2 +1,2 @@
-def average_nft_value(nft_collection):
+def prob04(nft_collection):
     raise NotImplementedError

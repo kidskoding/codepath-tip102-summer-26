@@ -1,5 +1,5 @@
 import pytest
-from prob02 import find_cabin_index
+from prob02 import prob02
 
 
 @pytest.mark.parametrize("cabins, preferred_deck, expected", [
@@ -10,4 +10,4 @@ from prob02 import find_cabin_index
     ([], 4, 0),             # empty -> insert at 0
 ])
 def test_prob02(cabins, preferred_deck, expected):
-    assert find_cabin_index(cabins, preferred_deck) == expected
+    assert prob02(cabins, preferred_deck) == expected

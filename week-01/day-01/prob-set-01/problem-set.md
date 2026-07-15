@@ -8,12 +8,12 @@
 
 ### Description
 
-Write a function `welcome()` that prints the string `"Welcome to The Hundred Acre Wood!"`.
+Write a function `prob01()` that prints the string `"Welcome to The Hundred Acre Wood!"`.
 
 ### Function Signature
 
 ```python
-def welcome():
+def prob01():
     pass
 ```
 
@@ -21,7 +21,7 @@ def welcome():
 
 **Example 1:**
 ```
-Input:  welcome()
+Input:  prob01()
 Output: Welcome to The Hundred Acre Wood!
 ```
 
@@ -33,12 +33,12 @@ Output: Welcome to The Hundred Acre Wood!
 
 ### Description
 
-Write a function `greeting()` that accepts a single parameter, a string `name`, and prints the string `"Welcome to The Hundred Acre Wood <name>! My name is Christopher Robin."`.
+Write a function `prob02()` that accepts a single parameter, a string `name`, and prints the string `"Welcome to The Hundred Acre Wood <name>! My name is Christopher Robin."`.
 
 ### Function Signature
 
 ```python
-def greeting(name):
+def prob02(name):
     pass
 ```
 
@@ -46,13 +46,13 @@ def greeting(name):
 
 **Example 1:**
 ```
-Input:  greeting("Michael")
+Input:  prob02("Michael")
 Output: Welcome to The Hundred Acre Wood Michael! My name is Christopher Robin.
 ```
 
 **Example 2:**
 ```
-Input:  greeting("Winnie the Pooh")
+Input:  prob02("Winnie the Pooh")
 Output: Welcome to The Hundred Acre Wood Winnie the Pooh! My name is Christopher Robin.
 ```
 
@@ -64,7 +64,7 @@ Output: Welcome to The Hundred Acre Wood Winnie the Pooh! My name is Christopher
 
 ### Description
 
-Write a function `print_catchphrase()` that accepts a string `character` as a parameter and prints the catchphrase of the given character as outlined in the table below.
+Write a function `prob03()` that accepts a string `character` as a parameter and prints the catchphrase of the given character as outlined in the table below.
 
 | Character | Catchphrase |
 | --- | --- |
@@ -78,7 +78,7 @@ If the given character does not match one of the characters above, print `"Sorry
 ### Function Signature
 
 ```python
-def print_catchphrase(character):
+def prob03(character):
     pass
 ```
 
@@ -86,13 +86,13 @@ def print_catchphrase(character):
 
 **Example 1:**
 ```
-Input:  print_catchphrase("Pooh")
+Input:  prob03("Pooh")
 Output: Oh bother!
 ```
 
 **Example 2:**
 ```
-Input:  print_catchphrase("Piglet")
+Input:  prob03("Piglet")
 Output: Sorry! I don't know Piglet's catchphrase!
 ```
 
@@ -104,12 +104,12 @@ Output: Sorry! I don't know Piglet's catchphrase!
 
 ### Description
 
-Implement a function `get_item()` that accepts a 0-indexed list `items` and a non-negative integer `x` and returns the element at index `x` in `items`. If `x` is not a valid index of `items`, return `None`.
+Implement a function `prob04()` that accepts a 0-indexed list `items` and a non-negative integer `x` and returns the element at index `x` in `items`. If `x` is not a valid index of `items`, return `None`.
 
 ### Function Signature
 
 ```python
-def get_item(items, x):
+def prob04(items, x):
     pass
 ```
 
@@ -135,12 +135,12 @@ Output: None
 
 ### Description
 
-Winnie the Pooh wants to know how much honey he has. Write a function `sum_honey()` that accepts a list of integers `hunny_jars` and returns the sum of all elements in the list. Do not use the built-in function `sum()`.
+Winnie the Pooh wants to know how much honey he has. Write a function `prob05()` that accepts a list of integers `hunny_jars` and returns the sum of all elements in the list. Do not use the built-in function `sum()`.
 
 ### Function Signature
 
 ```python
-def sum_honey(hunny_jars):
+def prob05(hunny_jars):
     pass
 ```
 
@@ -166,12 +166,12 @@ Output: 0
 
 ### Description
 
-Help Winnie the Pooh double his honey! Write a function `doubled()` that accepts a list of integers `hunny_jars` as a parameter and multiplies each element in the list by two. Return the doubled list.
+Help Winnie the Pooh double his honey! Write a function `prob06()` that accepts a list of integers `hunny_jars` as a parameter and multiplies each element in the list by two. Return the prob06 list.
 
 ### Function Signature
 
 ```python
-def doubled(hunny_jars):
+def prob06(hunny_jars):
     pass
 ```
 
@@ -193,12 +193,12 @@ Output: [2, 4, 6]
 
 Winnie the Pooh and his friends are playing a game called Poohsticks where they drop sticks in a stream and race them. They time how long it takes each player's stick to float under Poohsticks Bridge to score each round.
 
-Write a function `count_less_than()` to help Pooh and his friends determine how many players should move on to the next round. `count_less_than()` accepts a list of integers `race_times` and an integer `threshold` and returns the number of race times less than `threshold`.
+Write a function `prob07()` to help Pooh and his friends determine how many players should move on to the next round. `prob07()` accepts a list of integers `race_times` and an integer `threshold` and returns the number of race times less than `threshold`.
 
 ### Function Signature
 
 ```python
-def count_less_than(race_times, threshold):
+def prob07(race_times, threshold):
     pass
 ```
 
@@ -224,7 +224,7 @@ Output: 0
 
 ### Description
 
-Write a function `print_todo_list()` that accepts a list of strings named `tasks`. The function should number and print each task on a new line using the format:
+Write a function `prob08()` that accepts a list of strings named `tasks`. The function should number and print each task on a new line using the format:
 
 ```
 Pooh's To Dos:
@@ -236,7 +236,7 @@ Pooh's To Dos:
 ### Function Signature
 
 ```python
-def print_todo_list(tasks):
+def prob08(tasks):
     pass
 ```
 
@@ -268,12 +268,12 @@ Pooh's To Dos:
 
 ### Description
 
-Rabbit is very particular about his belongings and wants to own an even number of each thing he owns. Write a function `can_pair()` that accepts a list of integers `item_quantities`. Return `True` if each number in `item_quantities` is even. Return `False` otherwise.
+Rabbit is very particular about his belongings and wants to own an even number of each thing he owns. Write a function `prob09()` that accepts a list of integers `item_quantities`. Return `True` if each number in `item_quantities` is even. Return `False` otherwise.
 
 ### Function Signature
 
 ```python
-def can_pair(item_quantities):
+def prob09(item_quantities):
     pass
 ```
 
@@ -305,12 +305,12 @@ Output: True
 
 ### Description
 
-Piglet has collected a big pile of his favorite food, haycorns, and wants to split them evenly amongst his friends. Write a function `split_haycorns()` to help Piglet determine the number of ways he can split his haycorns into even groups. `split_haycorns()` accepts a positive integer `quantity` and returns a list of all divisors of `quantity`.
+Piglet has collected a big pile of his favorite food, haycorns, and wants to split them evenly amongst his friends. Write a function `prob10()` to help Piglet determine the number of ways he can split his haycorns into even groups. `prob10()` accepts a positive integer `quantity` and returns a list of all divisors of `quantity`.
 
 ### Function Signature
 
 ```python
-def split_haycorns(quantity):
+def prob10(quantity):
     pass
 ```
 
@@ -336,12 +336,12 @@ Output: [1]
 
 ### Description
 
-Signs in the Hundred Acre Wood have been losing letters as Tigger bounces around stealing any letters he needs to spell out his name. Write a function `tiggerfy()` that accepts a string `s`, and returns a new string with the letters `t`, `i`, `g`, `e`, and `r` removed from it.
+Signs in the Hundred Acre Wood have been losing letters as Tigger bounces around stealing any letters he needs to spell out his name. Write a function `prob11()` that accepts a string `s`, and returns a new string with the letters `t`, `i`, `g`, `e`, and `r` removed from it.
 
 ### Function Signature
 
 ```python
-def tiggerfy(s):
+def prob11(s):
     pass
 ```
 
@@ -373,12 +373,12 @@ Output: "Hunny"
 
 ### Description
 
-Pooh, Piglet, and Roo are looking for thistles to gift their friend Eeyore. Write a function `locate_thistles()` that takes in a list of strings `items` and returns a list of the indices of any elements with value `"thistle"`. The indices in the resulting list should be ordered from least to greatest.
+Pooh, Piglet, and Roo are looking for thistles to gift their friend Eeyore. Write a function `prob12()` that takes in a list of strings `items` and returns a list of the indices of any elements with value `"thistle"`. The indices in the resulting list should be ordered from least to greatest.
 
 ### Function Signature
 
 ```python
-def locate_thistles(items):
+def prob12(items):
     pass
 ```
 

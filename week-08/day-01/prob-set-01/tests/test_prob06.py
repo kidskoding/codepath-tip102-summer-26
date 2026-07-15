@@ -1,6 +1,6 @@
 import pytest
 from references import TreeNode
-from prob06 import survey_tree
+from prob06 import prob06
 
 magnolia = TreeNode("Root",
                     TreeNode("Node1", TreeNode("Leaf1")),
@@ -13,4 +13,4 @@ magnolia = TreeNode("Root",
     (None, []),              # edge: empty tree
 ])
 def test_prob06(root, expected):
-    assert survey_tree(root) == expected
+    assert prob06(root) == expected

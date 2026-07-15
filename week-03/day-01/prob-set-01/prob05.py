@@ -1,2 +1,2 @@
-def content_cleaner(post: str) -> str:
+def prob05(post: str) -> str:
     raise NotImplementedError

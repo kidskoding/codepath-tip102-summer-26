@@ -1,5 +1,5 @@
 import pytest
-from prob04 import is_profitable
+from prob04 import prob04
 
 
 @pytest.mark.parametrize("excursion_counts, expected", [
@@ -8,4 +8,4 @@ from prob04 import is_profitable
     ([5], 1),       # one value >= 1  -> x = 1
 ])
 def test_prob04(excursion_counts, expected):
-    assert is_profitable(excursion_counts) == expected
+    assert prob04(excursion_counts) == expected

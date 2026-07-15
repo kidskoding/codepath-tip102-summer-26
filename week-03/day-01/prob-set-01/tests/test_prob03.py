@@ -1,5 +1,5 @@
 import pytest
-from prob03 import is_symmetrical_title
+from prob03 import prob03
 
 @pytest.mark.parametrize("title, expected", [
     ("A Santa at NASA", True),
@@ -9,4 +9,4 @@ from prob03 import is_symmetrical_title
     ("No lemon, no melon", True),  # ignores case/punct
 ])
 def test_prob03(title, expected):
-    assert is_symmetrical_title(title) == expected
+    assert prob03(title) == expected

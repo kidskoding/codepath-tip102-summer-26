@@ -1,5 +1,5 @@
 import pytest
-from prob04 import fibonacci_growth
+from prob04 import prob04
 
 
 @pytest.mark.parametrize("n, expected", [
@@ -9,4 +9,4 @@ from prob04 import fibonacci_growth
     (1, 1),    # base case
 ])
 def test_prob04(n, expected):
-    assert fibonacci_growth(n) == expected
+    assert prob04(n) == expected

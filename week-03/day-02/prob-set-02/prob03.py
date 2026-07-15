@@ -1,2 +1,2 @@
-def collect_festival_points(points):
+def prob03(points):
     raise NotImplementedError

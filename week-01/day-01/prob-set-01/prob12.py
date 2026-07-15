@@ -1,2 +1,2 @@
-def locate_thistles(items):
+def prob12(items):
     raise NotImplementedError

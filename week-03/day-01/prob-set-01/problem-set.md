@@ -91,7 +91,7 @@ You track your daily engagement rates as a list of integers sorted in non-decrea
 ### Starter Code
 
 ```python
-def engagement_boost(engagements):
+def prob04(engagements):
     squared_engagements = []
 
     for i in range(len(engagements)):

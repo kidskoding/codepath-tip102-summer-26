@@ -14,7 +14,7 @@
     Space: O(n)
 '''
 
-def is_valid_post_format(posts: str) -> bool:
+def prob01(posts: str) -> bool:
     brackets_dict = {')': '(', ']': '[', '}': '{'}
     opening = set(brackets_dict.values())
     stack = []

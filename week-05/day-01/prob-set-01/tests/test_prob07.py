@@ -1,6 +1,6 @@
 import pytest
 from references import Villager
-from prob07 import of_personality_type
+from prob07 import prob07
 
 isabelle = Villager("Isabelle", "Dog", "Normal", "what's up?")
 bob = Villager("Bob", "Cat", "Lazy", "pthhhpth")
@@ -14,4 +14,4 @@ stitches = Villager("Stitches", "Cub", "Lazy", "stuffin'")
     ([isabelle], "Normal", ["Isabelle"]),  # single villager that matches
 ])
 def test_prob07(townies, personality, expected):
-    assert of_personality_type(townies, personality) == expected
+    assert prob07(townies, personality) == expected

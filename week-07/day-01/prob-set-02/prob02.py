@@ -1,2 +1,2 @@
-def count_walls(walls):
+def prob02(walls):
     raise NotImplementedError

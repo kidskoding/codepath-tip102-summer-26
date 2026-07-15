@@ -1,2 +1,2 @@
-def find_shallowest_point(depths):
+def prob05(depths):
     raise NotImplementedError

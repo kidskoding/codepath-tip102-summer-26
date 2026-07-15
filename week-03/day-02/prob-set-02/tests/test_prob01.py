@@ -1,5 +1,5 @@
 import pytest
-from prob01 import manage_stage_changes
+from prob01 import prob01
 
 
 @pytest.mark.parametrize("changes, expected", [
@@ -10,4 +10,4 @@ from prob01 import manage_stage_changes
     (["Schedule A"], ["A"]),
 ])
 def test_prob01(changes, expected):
-    assert manage_stage_changes(changes) == expected
+    assert prob01(changes) == expected

@@ -50,7 +50,7 @@ Evaluate the time complexity of your function. Define your variables and provide
 ### Function Signature
 
 ```python
-def calculate_yield(root):
+def prob02(root):
     pass
 ```
 
@@ -77,7 +77,7 @@ Evaluate the time complexity of your function. Define your variables and provide
 ### Function Signature
 
 ```python
-def right_vine(root):
+def prob03(root):
     pass
 ```
 
@@ -103,14 +103,14 @@ Output: ['Root']
 
 ### Description
 
-Implement `right_vine()` again using the opposite approach: if you implemented it iteratively in Problem 3, implement it recursively here; if you implemented it recursively, implement it iteratively.
+Implement `prob03()` again using the opposite approach: if you implemented it iteratively in Problem 3, implement it recursively here; if you implemented it recursively, implement it iteratively.
 
 Evaluate the time complexity of your function. Define your variables and provide a rationale for why you believe your solution has the stated time complexity. Assume the input tree is balanced.
 
 ### Function Signature
 
 ```python
-def right_vine(root):
+def prob04(root):
     pass
 ```
 
@@ -143,7 +143,7 @@ Evaluate the time complexity of your function. Define your variables and provide
 ### Function Signature
 
 ```python
-def count_leaves(root):
+def prob05(root):
     pass
 ```
 
@@ -176,7 +176,7 @@ Evaluate the time complexity of your function. Define your variables and provide
 ### Function Signature
 
 ```python
-def survey_tree(root):
+def prob06(root):
     pass
 ```
 
@@ -196,14 +196,14 @@ Output: ["Leaf1", "Node1", "Leaf2", "Leaf3", "Node2", "Root"]
 
 ### Description
 
-You've found a wild blueberry bush and want to forage — but leave some behind for the ecosystem. Given the `root` of a binary tree where each node's value is the number of berries on a branch, and a value `threshold`, write `harvest_berries()` that returns the sum of all node values strictly greater than `threshold`.
+You've found a wild blueberry bush and want to forage — but leave some behind for the ecosystem. Given the `root` of a binary tree where each node's value is the number of berries on a branch, and a value `threshold`, write `prob07()` that returns the sum of all node values strictly greater than `threshold`.
 
 Evaluate the time complexity of your function. Define your variables and provide a rationale for why you believe your solution has the stated time complexity. Assume the input tree is balanced.
 
 ### Function Signature
 
 ```python
-def harvest_berries(root, threshold):
+def prob07(root, threshold):
     pass
 ```
 
@@ -238,7 +238,7 @@ Evaluate the time complexity of your function. Define your variables and provide
 ### Function Signature
 
 ```python
-def find_flower(root, flower):
+def prob08(root, flower):
     pass
 ```
 

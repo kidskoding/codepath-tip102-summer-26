@@ -1,5 +1,5 @@
 import pytest
-from prob04 import booth_navigation
+from prob04 import prob04
 
 
 @pytest.mark.parametrize("actions, expected", [
@@ -11,4 +11,4 @@ from prob04 import booth_navigation
     ([1, "back"], []),
 ])
 def test_prob04(actions, expected):
-    assert booth_navigation(actions) == expected
+    assert prob04(actions) == expected

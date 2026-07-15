@@ -1,2 +1,2 @@
-def find_villain(crowd, villain):
+def prob08(crowd, villain):
     raise NotImplementedError
