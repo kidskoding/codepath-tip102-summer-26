@@ -1,0 +1,2 @@
+def batman():
+    raise NotImplementedError
