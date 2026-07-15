@@ -24,3 +24,12 @@ def test_prob02():
     clue5.next = clue6
     clue6.next = clue7
     assert prob02(clue5) == []
+
+    # whole-list cycle: 1 -> 2 -> 3 -> 1  (every value is in the cycle)
+    n1 = Node(1)
+    n2 = Node(2)
+    n3 = Node(3)
+    n1.next = n2
+    n2.next = n3
+    n3.next = n1
+    assert sorted(prob02(n1)) == [1, 2, 3]

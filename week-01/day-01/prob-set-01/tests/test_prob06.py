@@ -1,5 +1,11 @@
+import pytest
 from prob06 import doubled
 
-def test_prob06():
-    assert doubled([1, 2, 3]) == [1, 2, 3, 1, 2, 3]
-    assert doubled([]) == []
+@pytest.mark.parametrize("nums, expected", [
+    ([1, 2, 3], [2, 4, 6]),
+    ([], []),
+    ([5], [10]),
+    ([-3], [-6]),
+])
+def test_prob06(nums, expected):
+    assert doubled(nums) == expected

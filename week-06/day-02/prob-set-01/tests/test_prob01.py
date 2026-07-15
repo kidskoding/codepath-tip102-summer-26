@@ -10,3 +10,12 @@ def test_prob01():
     b.next = c
     c.next = a
     assert prob01(a) == True
+
+    # single node, no cycle
+    solo = Node(1)
+    assert prob01(solo) == False
+
+    # single node, self-cycle
+    loop = Node(1)
+    loop.next = loop
+    assert prob01(loop) == True

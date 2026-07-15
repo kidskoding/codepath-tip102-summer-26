@@ -1,3 +1,4 @@
+import pytest
 from references import Node
 from prob12 import print_list
 
@@ -9,6 +10,9 @@ def build(values):
     return head
 
 
-def test_prob12():
-    head = build(["Isabelle", "Saharah", "C.J."])
-    assert print_list(head) == "Isabelle -> Saharah -> C.J."
+@pytest.mark.parametrize("values, expected", [
+    (["Isabelle", "Saharah", "C.J."], "Isabelle -> Saharah -> C.J."),
+    (["Isabelle"], "Isabelle"),  # single node -> just its value, no separator
+])
+def test_prob12(values, expected):
+    assert print_list(build(values)) == expected
