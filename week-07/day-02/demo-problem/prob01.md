@@ -1,6 +1,5 @@
 # Demo Problem: Delete the Middle Node
-
-**Difficulty:** Medium
+**Source**: https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/
 
 ### Description
 

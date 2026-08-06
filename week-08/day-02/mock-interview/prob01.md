@@ -1,6 +1,5 @@
 # Mock Interview: Kth Smallest Element in a BST — Week 8
-
-**Difficulty:** Medium
+**Source**: https://leetcode.com/problems/kth-smallest-element-in-a-bst/
 
 ### Description
 

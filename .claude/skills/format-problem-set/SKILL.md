@@ -88,6 +88,40 @@ Output: ...
 ---
 ```
 
+## Single-problem folders: `demo-problem/` and `mock-interview/`
+
+These folders hold ONE problem each, not a set. They get `probNN.md` (not
+`problem-set.md`), plus `probNN.py` and `tests/` in the same folder:
+
+```
+week-XX/day-XX/demo-problem/
+  prob01.md
+  prob01.py
+  tests/conftest.py
+  tests/test_prob01.py
+```
+
+Same body as the template above, but the header carries a **Source** line and
+there is **no Difficulty line** — drop it entirely for these:
+
+```markdown
+# Demo Problem: [Title]
+**Source**: https://leetcode.com/problems/<slug>/
+
+### Description
+...
+```
+
+**Always fill in the Source URL.** If the problem comes from LeetCode, link the
+canonical `https://leetcode.com/problems/<slug>/` (strip `/description/` and any
+query string). Same for HackerRank/NeetCode/etc — link the actual problem page.
+If the user gave no URL and the problem is a recognizable LeetCode problem, write
+the URL from its slug. Only leave `**Source**:` blank when it's an original
+CodePath problem with no public page.
+
+Mock-interview folders use `# Mock Interview: [Title] — Week X` as the header,
+otherwise identical (Source line included).
+
 ## Also create probNN.py stub files
 
 After writing `problem-set.md`, create one `probNN.py` solution stub per problem
