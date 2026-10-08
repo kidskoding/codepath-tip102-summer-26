@@ -29,6 +29,26 @@ A problem that DOES have a function to implement but also asks a discussion
 question (e.g. "implement X, then discuss the tradeoffs") is NOT skipped — format
 it normally; the discussion prompt is just dropped.
 
+**Exception — code-along problems get a starter file.** Some problems have no
+function but DO ask the student to write code: instantiate an object, update an
+attribute, link nodes by hand, build a tree from given nodes. Mark these `(SKIPPED)`
+in `problem-set.md` the same way (no test is possible), but still create
+`probNN.py` holding the problem's starter code: the given class (or
+`from references import Node`), any setup carried over from the previous problem,
+and a `# ... here` comment saying what to write. Never leave a `probNN.py` blank.
+
+```python
+# prob10.py — "insert timmy between tom_nook and tommy"
+from references import Node
+
+# Linked list from Problem 9: tom_nook -> tommy
+tom_nook = Node("Tom Nook")
+tommy = Node("Tommy")
+tom_nook.next = tommy
+
+# Create timmy and insert it between tom_nook and tommy here
+```
+
 ## Output File Location
 
 Save to the most relevant path in the project. Default:
@@ -162,7 +182,9 @@ Rules for stubs:
   function, not a method. (2) A problem asking for TWO functions (e.g. "write it
   iteratively AND recursively") keeps both given names — they can't both be `probNN`.
 - **Skip debug/review problems** — if a problem has no function to implement (it's
-  "find the bug" / "trace this code"), don't create a `probNN.py` for it (per CLAUDE.md).
+  "find the bug" / "trace this code" / discuss), don't create a `probNN.py` for it
+  (per CLAUDE.md). Code-along problems (instantiate, link nodes by hand) are the
+  exception: they get a starter-code `probNN.py` (see the top of this skill).
 - **Shared classes go in the central repo-root `references/` package, NOT copied
   into each stub.** If problems share a class (`Node`, `Villager`, `Player`, …),
   add it to `references/` and have stubs and tests do `from references import Node`.
