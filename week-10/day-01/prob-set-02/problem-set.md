@@ -187,7 +187,44 @@ Output: id_map = {
 
 ### Description
 
-_Problem text not yet provided — paste the full description to fill this in._
+On a new reality show, a famous celebrity pretends to be a non-famous contestant, and the other contestants must guess who it is. There might be no celebrity at all. The show has `n` contestants labeled `1` to `n`.
+
+If the celebrity exists, then:
+
+1. The celebrity trusts none of the contestants.
+2. All the other contestants trust the celebrity.
+3. Exactly one person satisfies rules 1 and 2.
+
+You are given a list `trust`, where `trust[i] = [a, b]` means contestant `a` trusts contestant `b`. If a trust relationship is not in `trust`, it does not exist.
+
+Return the label of the celebrity if they exist and can be identified. Otherwise, return `-1`.
+
+### Function Signature
+
+```python
+def prob05(trust: list[list[int]], n: int) -> int:
+    pass
+```
+
+### Examples
+
+**Example 1:**
+```
+Input:  trust = [[1, 2]], n = 2
+Output: 2
+```
+
+**Example 2:**
+```
+Input:  trust = [[1, 3], [2, 3]], n = 3
+Output: 3
+```
+
+**Example 3:**
+```
+Input:  trust = [[1, 3], [2, 3], [3, 1]], n = 3
+Output: -1
+```
 
 ---
 
@@ -195,7 +232,42 @@ _Problem text not yet provided — paste the full description to fill this in._
 
 ### Description
 
-_Problem text not yet provided — paste the full description to fill this in._
+You are a casting agent for a major Hollywood production and the director has a certain celebrity in mind for the lead role. You have an adjacency matrix `celebs` where `celebs[i][j] = 1` means that celebrity `i` has a connection with celebrity `j`, and `celebs[i][j] = 0` means they don't. Connections are directed, meaning that `celebs[i][j] = 1` does not automatically mean `celebs[j][i] = 1`.
+
+Given a celebrity you know `start_celeb` and the celebrity the director wants to hire `target_celeb`, use Breadth First Search to return `True` if you can find a path of connections from `start_celeb` to `target_celeb`. Otherwise return `False`.
+
+### Function Signature
+
+```python
+def prob06(celebs: list[list[int]], start_celeb: int, target_celeb: int) -> bool:
+    pass
+```
+
+### Examples
+
+**Example 1:**
+```
+Input:  celebs = [
+            [0, 1, 0, 0, 0, 0, 0, 0],  # Celeb 0
+            [0, 1, 1, 0, 0, 0, 0, 0],  # Celeb 1
+            [0, 0, 0, 1, 0, 1, 0, 0],  # Celeb 2
+            [0, 0, 0, 0, 1, 0, 1, 0],  # Celeb 3
+            [0, 0, 0, 1, 0, 0, 0, 1],  # Celeb 4
+            [0, 1, 0, 0, 0, 0, 0, 0],  # Celeb 5
+            [0, 0, 0, 1, 0, 0, 0, 1],  # Celeb 6
+            [0, 0, 0, 0, 1, 0, 1, 0]]  # Celeb 7
+        start_celeb = 0
+        target_celeb = 6
+Output: True
+```
+
+**Example 2:**
+```
+Input:  celebs = (same as Example 1)
+        start_celeb = 3
+        target_celeb = 5
+Output: False
+```
 
 ---
 
