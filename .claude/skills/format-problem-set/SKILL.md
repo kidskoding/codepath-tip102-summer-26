@@ -82,8 +82,8 @@ def probNN(param: type) -> return_type:
 ```
 
 **Always name the function `probNN` (matching the problem number), even when the
-problem says "write a function `foo()`".** Keep the params and type hints exactly
-as given — only the name is overridden.
+problem says "write a function `foo()`".** Keep the param names exactly as given —
+only the name is overridden — and type-hint every param and the return.
 
 ### Examples
 
@@ -157,7 +157,10 @@ body — plus any class (e.g. `Node`) the signature depends on:
 
 ```python
 # prob03.py
-def prob03(suspect_ratings, threshold):
+from references import Node
+
+
+def prob03(suspect_ratings: Node | None, threshold: int) -> Node | None:
     pass
 ```
 
@@ -175,8 +178,16 @@ Rules for stubs:
 - **Both the FILE and the FUNCTION are named `probNN` by problem number — ignore what
   the problem calls the function.** "Write a function `welcome(name)`" → file
   `prob01.py` holding `def prob01(name):`. Not `welcome.py`, not `def welcome`.
-- Copy the params and type hints EXACTLY as given; only the function name is
-  overridden to `probNN`. Don't invent params.
+- Copy the param NAMES exactly as given; only the function name is overridden to
+  `probNN`. Don't invent, drop, or rename params.
+- **Always type-hint every param and the return (`-> type`), even though the source
+  gives none.** Infer the types from the description and examples, using modern
+  syntax: `list[int]`, `dict[str, int]`, `tuple[int, int]`, `X | None`. A node param
+  that can be empty is `Node | None` / `TreeNode | None` (import the class from
+  `references`); a function that only prints returns `-> None`; a value of mixed
+  types (e.g. room numbers that are `int` or `str`) is `int | str`. Use the SAME
+  hinted signature in the `problem-set.md` Function Signature block and the stub.
+  If the source already has hints, keep them.
 - **Two exceptions to the `probNN` name.** (1) Class-DEFINITION problems: methods keep
   their given names (`def set_catchphrase(self, ...)`) — `probNN` names a module-level
   function, not a method. (2) A problem asking for TWO functions (e.g. "write it
@@ -232,8 +243,9 @@ explicitly said "no tests" / "just the markdown".
 3. **Normalize examples** — convert `print(func(args))` → `Output: result` format
 4. **One file, all problems** — don't split into separate files unless user asks
 5. **No difficulty** — never add a `**Difficulty:**` line, even if the source states one
-6. **Keep params and types** exactly as given — don't rename params or change types.
-   The function NAME is always `probNN`, whatever the problem calls it.
+6. **Keep param names** exactly as given, and **type-hint every param and the
+   return** (see "Rules for stubs"). The function NAME is always `probNN`, whatever
+   the problem calls it.
 7. **Starter code** — if a problem asks to "add comments to existing code", include the full code block under a `### Starter Code` section
 
 ## Common Mistakes
