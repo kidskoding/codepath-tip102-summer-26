@@ -9,15 +9,11 @@ dependencies = [
 ]
 
 [tool.pytest.ini_options]
-# repo root on sys.path so any set can `from references import Node/Villager/Player`
 pythonpath = ["."]
 
 [tool.basedpyright]
 typeCheckingMode = "basic"
 reportOptionalMemberAccess = "none"
-# Unwritten solutions are `pass` stubs, which return None and so contradict any
-# declared `-> list[str]` etc. Off so stubs are clean. Trade-off: a real
-# wrong-return-type bug in a WRITTEN solution won't be flagged either.
 reportReturnType = "none"
 
 executionEnvironments = [
