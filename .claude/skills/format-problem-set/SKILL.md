@@ -146,10 +146,11 @@ The test conftest detects a `pass`-only body and reports unwritten solutions as
 NotImplementedError`.
 
 Rules for stubs:
-- **Check the dir first (`ls`). If a `probNN.py` already exists, NEVER touch it** —
-  not the stub, not a rewrite, nothing. Skip every problem number already present,
-  whether the file has real code, a `pass` stub, or is empty. Only create stubs for
-  problem numbers with NO existing file.
+- **Check the dir first (`ls`). If a `probNN.py` already has content, NEVER touch
+  it** — not the stub, not a rewrite, nothing, whether it holds real code or a
+  `pass` stub. Create stubs for problem numbers with no file, AND fill any existing
+  `probNN.py` that is empty or whitespace-only (a blank file breaks the test
+  import). Never leave a `probNN.py` blank.
 - One file per problem, `probNN` matching the `## Problem N` number.
 - **Both the FILE and the FUNCTION are named `probNN` by problem number — ignore what
   the problem calls the function.** "Write a function `welcome(name)`" → file
