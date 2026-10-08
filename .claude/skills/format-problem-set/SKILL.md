@@ -247,6 +247,19 @@ explicitly said "no tests" / "just the markdown".
    return** (see "Rules for stubs"). The function NAME is always `probNN`, whatever
    the problem calls it.
 7. **Starter code** — if a problem asks to "add comments to existing code", include the full code block under a `### Starter Code` section
+8. **Diagrams in Mermaid** — when a problem has a picture or describes a structure
+   (a linked list with a cycle, a tree, a graph), draw it as a ```` ```mermaid ````
+   block, not an image link or ASCII art. Put it inside the example it belongs to,
+   above the `Input:/Output:` block. Use `flowchart LR` for linked lists (back edge
+   for a cycle) and `flowchart TD` for trees and graphs:
+
+   ```mermaid
+   flowchart LR
+       A["Mystic Falls"] --> B["Troll's Bridge"] --> C["Elven Arbor"] --> D["Fairy Glade"]
+       D --> B
+   ```
+
+   Quote every node label (`A["..."]`) so apostrophes and spaces render.
 
 ## Common Mistakes
 
