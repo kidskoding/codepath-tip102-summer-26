@@ -4,8 +4,6 @@
 
 ## Problem 1: Counting Iron Man's Suits
 
-**Difficulty:** Easy
-
 ### Description
 
 Tony Stark, aka Iron Man, has designed many different suits over the years. Given a list of strings `suits` where each string is a suit in Stark's collection, count the total number of suits in the list. Implement it both iteratively and recursively — without using `len()`.
@@ -31,8 +29,6 @@ Output: 3
 ---
 
 ## Problem 2: Collecting Infinity Stones
-
-**Difficulty:** Easy
 
 ### Description
 
@@ -63,8 +59,6 @@ Output: 68
 
 ## Problem 3: Counting Iron Man's Unique Suits
 
-**Difficulty:** Medium
-
 ### Description
 
 Some of Iron Man's suits are duplicates. Given a list of strings `suits` where each string is a suit in Stark's collection, count the total number of **distinct** suits in the list. Implement it both iteratively and recursively.
@@ -90,8 +84,6 @@ Output: 2
 ---
 
 ## Problem 4: Calculating Groot's Growth
-
-**Difficulty:** Medium
 
 ### Description
 
@@ -126,8 +118,6 @@ Output: 21
 
 ## Problem 5: Calculating the Power of the Fantastic Four
 
-**Difficulty:** Medium
-
 ### Description
 
 The Fantastic Four's power level is represented as a power of 4. Write a recursive function that calculates 4 raised to the `n`th power. Support negative exponents.
@@ -159,8 +149,6 @@ Explanation: 4 to the power of -2 is 1 / (4 * 4) = 0.0625.
 
 ## Problem 6: Strongest Avenger
 
-**Difficulty:** Easy
-
 ### Description
 
 Given a list of the Avengers' `strengths`, find the maximum strength using a recursive approach — without using `max()`.
@@ -189,8 +177,6 @@ Output: 90
 ---
 
 ## Problem 7: Counting Vibranium Deposits
-
-**Difficulty:** Medium
 
 ### Description
 
@@ -221,8 +207,6 @@ Explanation: There are two `"V"` characters in `"VXVYGA"`.
 ---
 
 ## Problem 8: Merging Missions
-
-**Difficulty:** Medium
 
 ### Description
 

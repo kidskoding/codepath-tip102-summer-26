@@ -4,8 +4,6 @@
 
 ## Problem 1: Flatten a Nested List
 
-**Difficulty:** Medium
-
 ### Description
 
 Given a list that may contain integers or other lists (nested to any depth), return a single flat list of all the integers in left-to-right order.
@@ -45,8 +43,6 @@ Output: []
 ---
 
 ## Problem 2: Power of a Number
-
-**Difficulty:** Medium
 
 ### Description
 
@@ -88,8 +84,6 @@ Output: 1.0
 
 ## Problem 3: Binary Search Recursively
 
-**Difficulty:** Easy
-
 ### Description
 
 Given a sorted list of integers `nums` and a `target`, return the index of `target` if it is present, otherwise return `-1`. Implement the search recursively.
@@ -124,8 +118,6 @@ Output: -1
 
 ## Problem 4: Generate All Permutations of a String
 
-**Difficulty:** Medium
-
 ### Description
 
 Given a string `s`, return a list of all its permutations. You may return the permutations in any order. Assume the characters are distinct.
@@ -159,8 +151,6 @@ Output: ["a"]
 
 ## Problem 5: Generate All Subsets of a Set
 
-**Difficulty:** Medium
-
 ### Description
 
 Given a list of distinct integers `nums`, return all possible subsets (the power set). The solution set must not contain duplicate subsets; return them in any order.
@@ -193,8 +183,6 @@ Output: [[]]
 ---
 
 ## Problem 6: Validate a BST Recursively
-
-**Difficulty:** Medium
 
 ### Description
 
@@ -242,8 +230,6 @@ Output: False   (4's left subtree contains 3, but 3 < 5 is violated on the right
 
 ## Problem 7: Path Sum in a Binary Tree
 
-**Difficulty:** Easy
-
 ### Description
 
 Given the `root` of a binary tree and an integer `target`, return `True` if the tree has a root-to-leaf path such that the sum of the node values along the path equals `target`.
@@ -289,8 +275,6 @@ Output: False
 ---
 
 ## Problem 8: Merge Sort / Quicksort Implementation
-
-**Difficulty:** Medium
 
 ### Description
 

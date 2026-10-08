@@ -46,8 +46,6 @@ Ask user if path is unclear.
 
 ## Problem N: [Title]
 
-**Difficulty:** Easy / Medium / Hard
-
 ### Description
 
 [Problem description written in second-person, present tense. Clean prose, no raw formatting artifacts from the source.]
@@ -101,8 +99,7 @@ week-XX/day-XX/demo-problem/
   tests/test_prob01.py
 ```
 
-Same body as the template above, but the header carries a **Source** line and
-there is **no Difficulty line** — drop it entirely for these:
+Same body as the template above, but the header carries a **Source** line:
 
 ```markdown
 # Demo Problem: [Title]
@@ -211,7 +208,7 @@ explicitly said "no tests" / "just the markdown".
 2. **No hints section** — drop all `💡 Hint` and `✨ AI Hint` content entirely
 3. **Normalize examples** — convert `print(func(args))` → `Output: result` format
 4. **One file, all problems** — don't split into separate files unless user asks
-5. **Infer difficulty** if not stated — Easy for direct lookups, Medium for two-pointer/stack, Hard for complex logic
+5. **No difficulty** — never add a `**Difficulty:**` line, even if the source states one
 6. **Keep params and types** exactly as given — don't rename params or change types.
    The function NAME is always `probNN`, whatever the problem calls it.
 7. **Starter code** — if a problem asks to "add comments to existing code", include the full code block under a `### Starter Code` section

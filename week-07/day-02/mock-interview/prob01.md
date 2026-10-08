@@ -4,8 +4,6 @@
 
 ## Problem 1: Ransom Note
 
-**Difficulty:** Easy
-
 ### Description
 
 You are given two strings, `ransomNote` and `magazine`. Return `True` if `ransomNote` can be constructed by using the letters from `magazine`, and `False` otherwise.

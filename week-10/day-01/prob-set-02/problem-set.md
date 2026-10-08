@@ -4,8 +4,6 @@
 
 ## Problem 1: Hollywood Stars
 
-**Difficulty:** Easy
-
 ### Description
 
 The graph below illustrates connections between different Hollywood stars. Each node represents a celebrity, and an edge between two nodes indicates that the celebrities know each other.
@@ -50,8 +48,6 @@ Output: ['Laverne Cox', 'Sofia Vergara']
 
 ## Problem 2: The Feeling is Mutual
 
-**Difficulty:** Medium
-
 ### Description
 
 You are given an insider look into Hollywood gossip with an adjacency matrix `celebrities` where each node labeled `0` to `n` represents a celebrity. `celebrities[i][j] = 1` indicates that celebrity `i` likes celebrity `j`, and `celebrities[i][j] = 0` indicates that celebrity `i` dislikes or doesn't know celebrity `j`.
@@ -94,8 +90,6 @@ Output: False
 
 ## Problem 3: Closest Friends
 
-**Difficulty:** Easy
-
 ### Description
 
 You are a talented actor looking for your next big movie and want to leverage your connections to see if there are any good roles available. To increase your chances, you want to ask your closest friends first.
@@ -134,8 +128,6 @@ Output: ['Meryl Streep', 'Ali Wong']
 ---
 
 ## Problem 4: Network Lookup
-
-**Difficulty:** Medium
 
 ### Description
 
@@ -193,8 +185,6 @@ Output: id_map = {
 
 ## Problem 5: Secret Celebrity
 
-**Difficulty:** Unknown
-
 ### Description
 
 _Problem text not yet provided — paste the full description to fill this in._
@@ -203,8 +193,6 @@ _Problem text not yet provided — paste the full description to fill this in._
 
 ## Problem 6: Casting Call Search
 
-**Difficulty:** Unknown
-
 ### Description
 
 _Problem text not yet provided — paste the full description to fill this in._
@@ -212,8 +200,6 @@ _Problem text not yet provided — paste the full description to fill this in._
 ---
 
 ## Problem 7: Casting Call Search II
-
-**Difficulty:** Medium
 
 ### Description
 
@@ -265,8 +251,6 @@ Output: False
 ---
 
 ## Problem 8: Copying Seating Arrangements
-
-**Difficulty:** Hard
 
 ### Description
 

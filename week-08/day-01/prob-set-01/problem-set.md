@@ -33,8 +33,6 @@ Verify with the provided `print_tree(root)`, which should give:
 
 ## Problem 2: Calculating Yield
 
-**Difficulty:** Easy
-
 ### Description
 
 You have a fruit tree represented as a binary tree with exactly three nodes: the root and its two children. Given the `root` of the tree, evaluate the amount of fruit your tree will yield this year:
@@ -65,8 +63,6 @@ Output: 12
 ---
 
 ## Problem 3: Ivy Cutting
-
-**Difficulty:** Easy
 
 ### Description
 
@@ -99,8 +95,6 @@ Output: ['Root']
 
 ## Problem 4: Ivy Cutting II
 
-**Difficulty:** Easy
-
 ### Description
 
 Implement `prob03()` again using the opposite approach: if you implemented it iteratively in Problem 3, implement it recursively here; if you implemented it recursively, implement it iteratively.
@@ -131,8 +125,6 @@ Output: ['Root']
 ---
 
 ## Problem 5: Count the Tree Leaves
-
-**Difficulty:** Easy
 
 ### Description
 
@@ -165,8 +157,6 @@ Output: 1
 
 ## Problem 6: Pruning Plans
 
-**Difficulty:** Medium
-
 ### Description
 
 You have a large overgrown Magnolia tree in need of pruning. Before pruning, survey the whole tree. Given the `root` of a binary tree, return a list of the values of each node using a **postorder** traversal: explore the left subtree first, then the right subtree, and finally the root.
@@ -191,8 +181,6 @@ Output: ["Leaf1", "Node1", "Leaf2", "Leaf3", "Node2", "Root"]
 ---
 
 ## Problem 7: Foraging Berries
-
-**Difficulty:** Medium
 
 ### Description
 
@@ -226,8 +214,6 @@ Explanation: no nodes greater than 30
 ---
 
 ## Problem 8: Flower Fields
-
-**Difficulty:** Easy
 
 ### Description
 

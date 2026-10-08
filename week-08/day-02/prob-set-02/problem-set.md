@@ -15,8 +15,6 @@ class TreeNode:
 
 ## Problem 1: Find Lonely Cichlids
 
-**Difficulty:** Easy
-
 ### Description
 
 Sibling cichlid fish often form strong bonds after hatching, staying close to each other for protection. Given the root of a binary tree representing a family of cichlids where each node is a cichlid, return an array containing the values of all lonely cichlids in the family. A lonely cichlid is a fish (node) that is the only child of its parent. The matriarch (root) is not lonely because it does not have a parent. Return the array in any order.
@@ -80,8 +78,6 @@ Note: The elements of the list may be returned in any order.
 
 ## Problem 2: Searching Ariel's Treasures
 
-**Difficulty:** Easy
-
 ### Description
 
 The mermaid princess Ariel is looking for a specific item in the grotto where she collects objects from the human world. Ariel's collection is stored in a binary search tree (BST) where each node represents a different item in her collection. The items are organized according to their names (`val`) in alphabetical order in the BST.
@@ -121,8 +117,6 @@ Output: False
 
 ## Problem 3: Add New Treasure to Collection
 
-**Difficulty:** Medium
-
 ### Description
 
 Ariel and her pal Flounder visited a new shipwreck and found an exciting new human artifact to add to her collection, stored in a BST organized alphabetically by item name (`val`).
@@ -161,8 +155,6 @@ Dinglehopper Gizmo  Thingamabob  Whozit
 ---
 
 ## Problem 4: Sorting Pearls by Size
-
-**Difficulty:** Medium
 
 ### Description
 
@@ -212,8 +204,6 @@ Output: [1, 2, 3, 4, 5, 8]
 
 ## Problem 5: Smallest Pearl Above Minimum Size
 
-**Difficulty:** Medium
-
 ### Description
 
 You have a collection of pearls stored in a BST where each node represents a pearl with size `val`. You are looking for a pearl to gift the sea goddess Yemaya — the pearl must be larger than `min_size`.
@@ -259,8 +249,6 @@ Output: None
 ---
 
 ## Problem 6: Remove Invasive Species
-
-**Difficulty:** Hard
 
 ### Description
 
@@ -310,8 +298,6 @@ Output: root of the updated tree:
 ---
 
 ## Problem 7: Minimum Difference in Pearl Size
-
-**Difficulty:** Medium
 
 ### Description
 

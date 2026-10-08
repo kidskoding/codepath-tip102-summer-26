@@ -16,8 +16,6 @@ class TreeNode:
 
 ## Problem 1: Monstera Madness
 
-**Difficulty:** Easy
-
 ### Description
 
 Given the root of a binary tree where each node represents the number of splits in a leaf of a Monstera plant, return the number of Monstera leaves that have an odd number of splits.
@@ -58,8 +56,6 @@ Output: 0
 ---
 
 ## Problem 2: Flower Finding
-
-**Difficulty:** Easy
 
 ### Description
 
@@ -108,8 +104,6 @@ _Discussion/comparison problem — no implementation._ Compare `find_flower()` f
 
 ## Problem 4: Adding a New Plant to the Collection
 
-**Difficulty:** Medium
-
 ### Description
 
 Your houseplant collection is organized using a BST where each node represents a houseplant, organized alphabetically by name (`val`).
@@ -147,8 +141,6 @@ Output: root of the updated tree:
 
 ## Problem 5: Sorting Plants by Rarity
 
-**Difficulty:** Medium
-
 ### Description
 
 You track your plant collection in a BST where each node has a `key` and a `val`. The `val` contains the plant name, and the `key` is an integer representing the plant's rarity. Plants are organized in the BST by their `key`.
@@ -179,8 +171,6 @@ Output: [(1, 'Pothos'), (2, 'Spider Plant'), (3, 'Monstera'), (4, 'Hoya Motoskei
 ---
 
 ## Problem 6: Finding a New Plant Within Budget
-
-**Difficulty:** Medium
 
 ### Description
 
@@ -224,8 +214,6 @@ Output: None
 ---
 
 ## Problem 7: Remove Plant
-
-**Difficulty:** Hard
 
 ### Description
 

@@ -4,8 +4,6 @@
 
 ## Problem 1: Calculating Village Size
 
-**Difficulty:** Easy
-
 ### Description
 
 In the kingdom of Codepathia, the queen determines how many resources to distribute to a village based on its class. A village's class is equal to the number of digits in its population.
@@ -40,8 +38,6 @@ Output: 1
 
 ## Problem 2: Counting the Castle Walls
 
-**Difficulty:** Easy
-
 ### Description
 
 In a faraway kingdom, a castle is surrounded by multiple defensive walls, where each wall is nested within another. Given a list of lists `walls` where each list `[]` represents a wall, write a recursive function `prob02()` that returns the total number of walls.
@@ -73,8 +69,6 @@ Output: 1
 
 ## Problem 3: Reversing a Scroll
 
-**Difficulty:** Easy
-
 ### Description
 
 A wizard is deciphering an ancient scroll and needs to reverse the letters in a word to reveal a hidden message. Write a recursive function to reverse the letters in a given `scroll` and return the reversed scroll. Assume `scroll` only contains alphabetic characters.
@@ -105,8 +99,6 @@ Output: "spell"
 ---
 
 ## Problem 4: Palindromic Name
-
-**Difficulty:** Easy
 
 ### Description
 
@@ -145,8 +137,6 @@ Output: True
 
 ## Problem 5: Doubling the Power of a Spell
 
-**Difficulty:** Easy
-
 ### Description
 
 The court magician is practicing a spell that doubles its power with each incantation. Given an integer `initial_power` and a non-negative integer `n`, write a recursive function that doubles `initial_power` `n` times.
@@ -180,8 +170,6 @@ Explanation: 7 doubled 2 times: 7 -> 14 -> 28
 
 ## Problem 6: Checking the Knight's Path
 
-**Difficulty:** Easy
-
 ### Description
 
 A knight is traveling along a path marked by stones, and each stone has a number on it. The knight must check if the numbers on the stones form a strictly increasing sequence. Write a recursive function to determine if the sequence is strictly increasing.
@@ -213,8 +201,6 @@ Output: False
 
 ## Problem 7: Finding the Longest Winning Streak
 
-**Difficulty:** Medium
-
 ### Description
 
 In the kingdom's grand tournament, knights compete in a series of challenges. A knight's performance in the challenge is represented by a string `challenges`, where a success is represented by an `S` and each other outcome (like a draw or loss) is represented by an `O`. Write a recursive function to find the length of the longest consecutive streak of successful challenges (`S`).
@@ -245,8 +231,6 @@ Output: 1
 ---
 
 ## Problem 8: Weaving Spells
-
-**Difficulty:** Medium
 
 ### Description
 

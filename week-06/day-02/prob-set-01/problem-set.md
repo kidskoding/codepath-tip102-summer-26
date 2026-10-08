@@ -4,8 +4,6 @@
 
 ## Problem 1: Wild Goose Chase
 
-**Difficulty:** Easy
-
 ### Description
 
 You're a detective and have been given an anonymous tip on your latest case, but something about it seems fishy — you suspect the clue might be a red herring meant to send you around in circles.
@@ -38,8 +36,6 @@ Output: True
 ---
 
 ## Problem 2: Breaking the Cycle
-
-**Difficulty:** Medium
 
 ### Description
 
@@ -83,8 +79,6 @@ Output: []
 
 ## Problem 3: Prioritizing Suspects
 
-**Difficulty:** Medium
-
 ### Description
 
 You've identified a list of suspects, but time is limited and you won't be able to question all of them today.
@@ -125,8 +119,6 @@ Note that nodes 4 and 5 can be in any order so long as they come before 3, 2, an
 
 ## Problem 4: Puzzling it Out
 
-**Difficulty:** Easy
-
 ### Description
 
 A new witness has emerged and provided a new account of events the night of the crime. Given the heads of two sorted linked lists, `known_timeline` and `witness_timeline`, each representing a numbered sequence of events, merge the two timelines into one sorted sequence of events.
@@ -159,8 +151,6 @@ Output: 1 -> 1 -> 2 -> 3 -> 4 -> 4
 ---
 
 ## Problem 5: A New Perspective
-
-**Difficulty:** Medium
 
 ### Description
 
@@ -199,8 +189,6 @@ Output: 2 -> 0 -> 1
 ---
 
 ## Problem 6: Adding Up the Evidence
-
-**Difficulty:** Medium
 
 ### Description
 

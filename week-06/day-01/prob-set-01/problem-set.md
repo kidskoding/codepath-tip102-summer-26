@@ -4,8 +4,6 @@
 
 ## Problem 1: Building a Playlist
 
-**Difficulty:** Easy
-
 ### Description
 
 The assignment statement to the `top_hits_2010s` variable below creates the linked list `Uptown Funk -> Party Rock Anthem -> Bad Romance`. Break apart the assignment statement into multiple lines with one call to the `Node` constructor per line to recreate the list.
@@ -40,8 +38,6 @@ Output: Uptown Funk -> Party Rock Anthem -> Bad Romance
 ---
 
 ## Problem 2: Top Artists
-
-**Difficulty:** Easy
 
 ### Description
 
@@ -92,8 +88,6 @@ Output: { "SZA": 2, "Jimin": 1, "Sabrina Carpenter": 1 }
 ---
 
 ## Problem 3: Glitching Out
-
-**Difficulty:** Medium
 
 ### Description
 
@@ -159,8 +153,6 @@ Output: ('SOS', 'ABBA') -> ('Simple Twist of Fate', 'Bob Dylan') -> ('Lovely Day
 
 ## Problem 4: On Repeat
 
-**Difficulty:** Medium
-
 ### Description
 
 A variation of the two-pointer technique introduced in previous units is to have a slow and a fast pointer that increment at different rates.
@@ -210,8 +202,6 @@ Output: True
 ---
 
 ## Problem 5: Looped
-
-**Difficulty:** Medium
 
 ### Description
 
@@ -268,8 +258,6 @@ Output: 3
 ---
 
 ## Problem 6: Volume Control
-
-**Difficulty:** Medium
 
 ### Description
 

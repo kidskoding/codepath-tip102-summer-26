@@ -4,8 +4,6 @@
 
 ## Problem 1: Graphing Flights
 
-**Difficulty:** Easy
-
 ### Description
 
 The graph below represents the flights offered by CodePath Airlines. Each node (vertex) is an airport (JFK — New York City, LAX — Los Angeles, DFW — Dallas Fort Worth, ATL — Atlanta), and an edge between two vertices means CodePath Airlines offers flights between those airports.
@@ -55,8 +53,6 @@ Output: ['LAX', 'DFW']
 
 ## Problem 2: There and Back
 
-**Difficulty:** Medium
-
 ### Description
 
 As a flight coordinator for CodePath Airlines, you have a 0-indexed adjacency list `flights` with `n` nodes where each node represents the ID of a different destination, and `flights[i]` is an integer array indicating there is a flight from destination `i` to each destination in `flights[i]`.
@@ -87,8 +83,6 @@ Output: False
 ---
 
 ## Problem 3: Finding Direct Flights
-
-**Difficulty:** Easy
 
 ### Description
 
@@ -133,8 +127,6 @@ Output: []
 
 ## Problem 4: Converting Flight Representations
 
-**Difficulty:** Medium
-
 ### Description
 
 Given a list of edges `flights` where `flights[i] = [a, b]` denotes that there exists a bidirectional flight (incoming and outgoing) from city `a` to city `b`, return an adjacency dictionary `adj_dict` representing the same flights graph, where `adj_dict[a]` is a list denoting there is a flight from city `a` to each city in `adj_dict[a]`.
@@ -164,8 +156,6 @@ Output: {
 ---
 
 ## Problem 5: Find Center of Airport
-
-**Difficulty:** Easy
 
 ### Description
 
@@ -199,8 +189,6 @@ Output: 1
 ---
 
 ## Problem 6: Finding All Reachable Destinations
-
-**Difficulty:** Medium
 
 ### Description
 
@@ -253,8 +241,6 @@ Output: ['Helsinki', 'Cairo', 'New York', 'Reykjavik']
 
 ## Problem 7: Finding All Reachable Destinations II
 
-**Difficulty:** Medium
-
 ### Description
 
 Same setup as Problem 6, but this time use Depth First Search (DFS) to return a list of all destinations that can be reached from `start`. The list should include both direct and connecting flights, ordered based on the order in which airports are visited in DFS.
@@ -305,8 +291,6 @@ Output: ['Helsinki', 'Cairo', 'Reykjavik', 'New York']
 ---
 
 ## Problem 8: Find Itinerary
-
-**Difficulty:** Medium
 
 ### Description
 

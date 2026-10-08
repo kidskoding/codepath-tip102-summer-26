@@ -4,8 +4,6 @@
 
 ## Problem 1: Finding the Perfect Cruise
 
-**Difficulty:** Easy
-
 ### Description
 
 It's vacation time! Given an integer `vacation_length` and a list of integers `cruise_lengths` sorted in ascending order, use binary search to return `True` if there is a cruise length that matches `vacation_length`, and `False` otherwise.
@@ -34,8 +32,6 @@ Output: False
 ---
 
 ## Problem 2: Booking the Perfect Cruise Cabin
-
-**Difficulty:** Medium
 
 ### Description
 
@@ -74,8 +70,6 @@ Output: 4
 
 ## Problem 3: Count Checked In Passengers
 
-**Difficulty:** Medium
-
 ### Description
 
 You are given a list of `rooms` where passengers are either checked in (`1`) or not checked in (`0`). The list is sorted, so all the `0`s appear before any `1`s. Write a function `prob03()` that counts and returns the total number of checked-in passengers (`1`s) in O(log n) time.
@@ -111,8 +105,6 @@ Output: 0
 
 ## Problem 4: Determining Profitability of Excursions
 
-**Difficulty:** Medium
-
 ### Description
 
 You have a sorted list of non-negative integers `excursion_counts`, where each number represents how many passengers signed up for various excursions. The list is **profitable** if there exists a number `x` such that there are exactly `x` excursions with **at least** `x` passengers signed up.
@@ -146,8 +138,6 @@ Explanation: No `x` fits — for `x = 1` there should be 1 number `>= 1`, but th
 
 ## Problem 5: Finding the Shallowest Point
 
-**Difficulty:** Medium
-
 ### Description
 
 Given an array of integers `depths` representing water depths along a route, write a function `prob05()` that uses a **divide-and-conquer** approach to return the shallowest point (minimum value) in `depths`. You may not use the built-in `min()` function.
@@ -176,8 +166,6 @@ Output: 10
 ---
 
 ## Problem 6: Cruise Ship Treasure Hunt
-
-**Difficulty:** Medium
 
 ### Description
 

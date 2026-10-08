@@ -30,8 +30,6 @@ Using the `TreeNode` class, construct the binary tree below (the text of each no
 
 ## Problem 2: Are Twins?
 
-**Difficulty:** Easy
-
 ### Description
 
 Given the root of a binary tree that has at most three nodes: the root, its left child, and its right child.
@@ -83,8 +81,6 @@ Output: False
 
 ## Problem 3: Poseidon's Decision
 
-**Difficulty:** Easy
-
 ### Description
 
 Poseidon has received advice from his council of advisors. You are given the advice as the root of a binary tree representing a boolean expression that has at most three nodes. The root may have exactly 0 or 2 children.
@@ -131,8 +127,6 @@ Output: False
 
 ## Problem 4: Escaping the Sea Caves
 
-**Difficulty:** Easy
-
 ### Description
 
 You are given the root of a binary tree representing a possible route through a system of sea caves. So long as you take the leftmost branch at every fork in the route, you'll find your way back home. Return an array with the value of each node in the leftmost path. If there is no left child, return only the root node value (the leftmost path in this case is just the root node).
@@ -176,8 +170,6 @@ Output: ['CaveA']
 
 ## Problem 5: Escaping the Sea Caves II
 
-**Difficulty:** Easy
-
 ### Description
 
 If you implemented the previous problem iteratively, implement it recursively. If you implemented it recursively, implement it iteratively. Same behavior as Problem 4.
@@ -211,8 +203,6 @@ Output: ['CaveA']
 
 ## Problem 6: Documenting Reefs
 
-**Difficulty:** Easy
-
 ### Description
 
 You are exploring a vast coral reef system represented as a binary tree, where each node corresponds to a specific coral formation. Perform a preorder traversal of the reef and return a list of the names of the coral formations in the order you visited them. In a preorder exploration, you explore the current node first, then the left subtree, and finally the right subtree.
@@ -243,8 +233,6 @@ Output: ['CoralA', 'CoralB', 'CoralD', 'CoralE', 'CoralC']
 ---
 
 ## Problem 7: Coral Count
-
-**Difficulty:** Easy
 
 ### Description
 
@@ -294,8 +282,6 @@ Output: 5
 ---
 
 ## Problem 8: Ocean Layers
-
-**Difficulty:** Easy
 
 ### Description
 

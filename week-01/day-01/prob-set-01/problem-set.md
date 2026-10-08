@@ -4,8 +4,6 @@
 
 ## Problem 1: Hundred Acre Wood
 
-**Difficulty:** Easy
-
 ### Description
 
 Write a function `prob01()` that prints the string `"Welcome to The Hundred Acre Wood!"`.
@@ -28,8 +26,6 @@ Output: Welcome to The Hundred Acre Wood!
 ---
 
 ## Problem 2: Greeting
-
-**Difficulty:** Easy
 
 ### Description
 
@@ -59,8 +55,6 @@ Output: Welcome to The Hundred Acre Wood Winnie the Pooh! My name is Christopher
 ---
 
 ## Problem 3: Catchphrase
-
-**Difficulty:** Easy
 
 ### Description
 
@@ -100,8 +94,6 @@ Output: Sorry! I don't know Piglet's catchphrase!
 
 ## Problem 4: Return Item
 
-**Difficulty:** Easy
-
 ### Description
 
 Implement a function `prob04()` that accepts a 0-indexed list `items` and a non-negative integer `x` and returns the element at index `x` in `items`. If `x` is not a valid index of `items`, return `None`.
@@ -130,8 +122,6 @@ Output: None
 ---
 
 ## Problem 5: Total Honey
-
-**Difficulty:** Easy
 
 ### Description
 
@@ -162,8 +152,6 @@ Output: 0
 
 ## Problem 6: Double Trouble
 
-**Difficulty:** Easy
-
 ### Description
 
 Help Winnie the Pooh double his honey! Write a function `prob06()` that accepts a list of integers `hunny_jars` as a parameter and multiplies each element in the list by two. Return the prob06 list.
@@ -186,8 +174,6 @@ Output: [2, 4, 6]
 ---
 
 ## Problem 7: Poohsticks
-
-**Difficulty:** Easy
 
 ### Description
 
@@ -219,8 +205,6 @@ Output: 0
 ---
 
 ## Problem 8: Pooh's To Do's
-
-**Difficulty:** Easy
 
 ### Description
 
@@ -264,8 +248,6 @@ Pooh's To Dos:
 
 ## Problem 9: Pairs
 
-**Difficulty:** Easy
-
 ### Description
 
 Rabbit is very particular about his belongings and wants to own an even number of each thing he owns. Write a function `prob09()` that accepts a list of integers `item_quantities`. Return `True` if each number in `item_quantities` is even. Return `False` otherwise.
@@ -301,8 +283,6 @@ Output: True
 
 ## Problem 10: Split Haycorns
 
-**Difficulty:** Medium
-
 ### Description
 
 Piglet has collected a big pile of his favorite food, haycorns, and wants to split them evenly amongst his friends. Write a function `prob10()` to help Piglet determine the number of ways he can split his haycorns into even groups. `prob10()` accepts a positive integer `quantity` and returns a list of all divisors of `quantity`.
@@ -331,8 +311,6 @@ Output: [1]
 ---
 
 ## Problem 11: T-I-Double Guh-ER
-
-**Difficulty:** Easy
 
 ### Description
 
@@ -368,8 +346,6 @@ Output: "Hunny"
 ---
 
 ## Problem 12: Thistle Hunt
-
-**Difficulty:** Easy
 
 ### Description
 

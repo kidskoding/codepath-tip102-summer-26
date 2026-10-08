@@ -4,8 +4,6 @@
 
 ## Problem 1: Batman
 
-**Difficulty:** Easy
-
 ### Description
 
 Write a function `prob01()` that prints the string `"I am vengeance. I am the night. I am Batman!"`.
@@ -28,8 +26,6 @@ Output: I am vengeance. I am the night. I am Batman!
 ---
 
 ## Problem 2: Mad Libs
-
-**Difficulty:** Easy
 
 ### Description
 
@@ -59,8 +55,6 @@ Output: I have one power. I never nap. - Batman
 ---
 
 ## Problem 3: Trilogy
-
-**Difficulty:** Easy
 
 ### Description
 
@@ -99,8 +93,6 @@ Output: Christopher Nolan did not release a Batman movie in 1998.
 
 ## Problem 4: Last
 
-**Difficulty:** Easy
-
 ### Description
 
 Implement a function `prob04()` that accepts a list of items `items` and returns the last item in the list. If the list is empty, return `None`.
@@ -129,8 +121,6 @@ Output: None
 ---
 
 ## Problem 5: Concatenate
-
-**Difficulty:** Easy
 
 ### Description
 
@@ -161,8 +151,6 @@ Output: ""
 
 ## Problem 6: Squared
 
-**Difficulty:** Easy
-
 ### Description
 
 Write a function `prob06()` that accepts a list of integers `numbers` as a parameter and squares each item in the list. Return the prob06 list.
@@ -185,8 +173,6 @@ Output: [1, 4, 9]
 ---
 
 ## Problem 7: NaNaNa Batman!
-
-**Difficulty:** Easy
 
 ### Description
 
@@ -217,8 +203,6 @@ Output: prob01!
 
 ## Problem 8: Find the Villain
 
-**Difficulty:** Easy
-
 ### Description
 
 Write a function `prob08()` that accepts a list `crowd` and a value `villain` as parameters and returns a list of all indices where the villain is found hiding in the crowd.
@@ -241,8 +225,6 @@ Output: [1, 4, 6]
 ---
 
 ## Problem 9: Odd
-
-**Difficulty:** Easy
 
 ### Description
 
@@ -272,8 +254,6 @@ Output: []
 ---
 
 ## Problem 10: Up and Down
-
-**Difficulty:** Easy
 
 ### Description
 
@@ -310,8 +290,6 @@ Output: -4
 
 ## Problem 11: Running Sum
 
-**Difficulty:** Medium
-
 ### Description
 
 Write a function `prob11()` that accepts a list of integers `superhero_stats` representing the number of crimes Batman has stopped each month in Gotham City. The function should modify the list to return the running sum such that `superhero_stats[i] = sum(superhero_stats[0]...superhero_stats[i])`. You must modify the list in place; you may not create any new lists as part of your solution.
@@ -346,8 +324,6 @@ Output: [3, 4, 6, 16, 17]
 ---
 
 ## Problem 12: Shuffle
-
-**Difficulty:** Medium
 
 ### Description
 
